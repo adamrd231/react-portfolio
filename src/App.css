@@ -1,35 +1,7 @@
 /* Grid Layout */
-.menu {
-
-  display: flex;
-  flex-direction: row;
-  padding: 1em;
-}
-
-.landing-page {
-  min-height: 76vh;
-  padding: 2em;
-}
-
-.portfolio {
-  min-height: 80vh;
-  padding: 2em;
-}
-
-.portfolio-entry {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer {
-  min-height: 24vh;
-  background-color: #efefef;
-  color: #111111;
-  padding: 2em;
-}
 
 .App {
-  background-color: #282c34;
+  background-color: #222222;
   color: white;
   display: grid;
 
@@ -39,9 +11,66 @@
   min-height: 100vh;
 }
 
+.menu {
+
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+}
+
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+}
+
+.landing-container {
+  margin: auto;
+  margin-left: 3em;
+}
+
+.landing-title {
+  font-size: 10em;
+  margin-bottom: 0;
+}
+
+.landing-description {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.portfolio {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.portfolio-entry {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.footer {
+  min-height: 24vh;
+  background-color: #efefef;
+  color: #111111;
+  padding: 2em;
+}
+
+
+
 .clickable {
   cursor: pointer;  
 }
+
 
 .link {
   margin: 1em;
@@ -56,3 +85,10 @@
   flex-direction: column;
   flex-shrink: initial;
 }
+
+img {
+  width: 100%;
+  height: auto;
+  
+}
+

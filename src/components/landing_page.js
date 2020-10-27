@@ -3,8 +3,11 @@ import React from 'react';
 function LandingPage() {
     return (
         <div className="landing-page">
-            <h1>Adam Reed.</h1>
-            <p>Developer / Designer in Portland Oreogn.</p>
+            <div className="landing-container">
+                <h1 className="landing-title">Adam Reed.</h1>
+                <p className="landing-description">I am a Designer | Developer. Scroll down to find my portfolio, blog and how to contact me.</p>
+            </div>
+            
         </div>
         )
 }

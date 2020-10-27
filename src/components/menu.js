@@ -6,7 +6,6 @@ function Menu() {
             <p className="link clickable">Menu</p> 
             <p className="link clickable">Portfolio</p> 
             <p className="link clickable">Blog</p> 
-            <p className="link clickable">About</p> 
             <p className="link clickable">Contact</p> 
         </div>
         
