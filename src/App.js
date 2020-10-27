@@ -5,12 +5,20 @@ import Menu from './components/menu';
 import LandingPage from './components/landing_page';
 import Portfolio from './components/portfolio';
 import Footer from './components/footer';
+import SingleBlogTemplate from './components/single-blog-template';
+
 // import { useFetch } from './hooks/useFetch';
 
 function App() {
 
   const [entries, setEntries] = useState([]);
+  const [selectedEntry, setSelectedEntry] = useState(null);
   // const [data] = useFetch();
+
+  const loadEntry = entry => {
+    setSelectedEntry(entry);
+    console.log(selectedEntry)
+  }
 
 
   useEffect( () => {
@@ -26,6 +34,8 @@ function App() {
   }, [])
 
 
+if (selectedEntry) return <SingleBlogTemplate entry={selectedEntry}/>
+
   return (
     <div className="App">
       <header>
@@ -33,7 +43,7 @@ function App() {
         <LandingPage />
       </header>
       <div>
-          <Portfolio entries={entries}/>
+          <Portfolio entries={entries} entryClicked={loadEntry}/>
           <Footer />
       </div>
         
