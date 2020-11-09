@@ -1,10 +1,12 @@
 import React from 'react';
 
+
 function Menu() {
+
     return (
         <div className="menu">
             <a href="http://localhost:3000/react-portfolio">
-                
+
                 <p className="link clickable">Home</p> 
             </a>
             

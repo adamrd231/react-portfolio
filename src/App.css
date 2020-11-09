@@ -22,10 +22,12 @@ p {
 
 img {
   width: 100%;
-  height: 100%;
+  height: 110%;
   object-fit: cover;
   object-position: 0% 50%;
+  overflow: hidden;
 }
+
 
 .text-spacing {
   padding: 1.5em;
@@ -57,6 +59,7 @@ a {
   color: white;
   border: 1px solid white;
   width: 100%;
+  border-radius: 0.66em;
   
 }
 
@@ -110,10 +113,12 @@ a {
 /* ============================== */
 
 .portfolio {
-  
+  position: relative;
   display: grid;  
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, minmax(0.1fr, 1fr))
+  grid-template-rows: repeat(2, minmax(0.1fr, 1fr));
+  margin: auto;
+  overflow: hidden;
 }
 
 
@@ -127,10 +132,22 @@ a {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transition: 1s;
   
 }
 
+.portfolio-entry:hover {
+  opacity: .5;
+  transform: scale(1.01);
+  overflow: hidden;
+}
+
+.overlay {
+
+}
 
 .portfolio-technology {
   display: flex;
@@ -155,10 +172,9 @@ a {
 
 .quote-box {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: 1.66em;;
   padding-top: 1em;
-  justify-items: center;
 }
 
 .quote-container {
@@ -192,7 +208,50 @@ a {
   
 }
 
-/* blog  */
+
+/*** BLOG SECTION STYLING ***/
+/* ============================== */
+
+.home-page-blogs {
+  padding: 2em;
+  padding-top: 5em;
+  padding-bottom: 8em;
+}
+
+.overall-blog-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-left: 3em;
+  margin-right: 5em;
+}
+
+
+.blogs-container {
+  flex: 4;
+  margin-right: 5em;
+
+}
+
+.blog-menu {
+  flex: 1;
+}
+
+/*** Single Page BLOG SECTION STYLING ***/
+/* ============================== */
+.single-page-blog {
+  display: flex;
+  flex-direction: row;
+  width: 66%;
+  padding: 9em;
+  padding-top: 3em;
+  padding-right: 15em;
+}
+
+.single-page-blog-container {
+  padding-right: 5em;
+}
 
 
 /*** FOOTER SECTION STYLING ***/
@@ -217,9 +276,9 @@ a {
 }
 
 .footer-icons {
-  width: 5em;
-  height: 5em;
-  padding-right: 1em;
+  width: 3em;
+  height: 3em;
+  padding-right: 1.66em;
 
 }
 
@@ -228,18 +287,3 @@ a {
   flex-direction: column;
   
 }
-
-
-
-/*** BLOG SECTION STYLING ***/
-/* ============================== */
-
-.blog-container {
-  padding-left: 5em;
-  padding-top: 5em;
-  padding-bottom: 15em;
-  width: 80%;
-}
-
-
-
