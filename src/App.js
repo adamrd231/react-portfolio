@@ -9,6 +9,8 @@ import Blogs from './components/blogs';
 import SingleProjectTemplate from './components/single-project-template';
 import SingleBlogTemplate from './components/single-blog-template.js';
 
+import $ from 'jquery';
+
 // import { useFetch } from './hooks/useFetch';
 
 function App() {

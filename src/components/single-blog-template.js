@@ -1,6 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import Menu from './menu';
 import Footer from './footer';
+// Import React SummerNote modules
+import ReactSummernote from 'react-summernote';
+
+import $ from 'jquery';
 
 
 function SingleBlogTemplate(props) {
@@ -22,7 +26,7 @@ function SingleBlogTemplate(props) {
                     <h1>{blog.title}</h1>
                     <p>{blog.created_on}</p>
                     <p>{blog.blog}</p>
-                    <p>Adam Reed</p>
+                    <span>Adam Reed</span>
                 </div>
             </div>  
             <Footer />
