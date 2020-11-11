@@ -25,7 +25,7 @@ function SingleProjectTemplate(props) {
                         <h1>{ent.title}</h1>
                         <h2>{ent.tagline}</h2>
                         <p><strong>Tools: </strong>{ent.technology}</p>
-                        <span>{ent.description}</span>
+                        <span dangerouslySetInnerHTML = {{ __html: ent.description}}></span>
                         <a className="clickable" href={ent.website}>
                             <button className="app-store-button clickable">{ent.website_button_text}</button>
                         </a>

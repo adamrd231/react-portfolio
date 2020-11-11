@@ -10,7 +10,7 @@ function Portfolio(props) {
 
 
     return (
-        <div className="portfolio"> 
+        <div id="portfolio" className="portfolio"> 
             { props.entries && props.entries.map( entry => {    
                 return (
                     <div className="portfolio-entry clickable" key={entry.id}>

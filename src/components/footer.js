@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <div className="footer">
+        <div id="footer" className="footer">
 
             <div className="footer-icon-container">
                 <h2>Links</h2>

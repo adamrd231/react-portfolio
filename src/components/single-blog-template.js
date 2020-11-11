@@ -2,19 +2,19 @@ import React, { Component, useState, useEffect } from 'react';
 import Menu from './menu';
 import Footer from './footer';
 // Import React SummerNote modules
-import ReactSummernote from 'react-summernote';
-
-import $ from 'jquery';
+// import RichTextEditor from './summernote';
 
 
 function SingleBlogTemplate(props) {
+
+    
 
     const blog = props.blog;
     const blogs = props.blogs;
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        console.log(blogs)
+     
     }, []);
 
     return (
@@ -25,7 +25,8 @@ function SingleBlogTemplate(props) {
                 <div className="single-page-blog-container">
                     <h1>{blog.title}</h1>
                     <p>{blog.created_on}</p>
-                    <p>{blog.blog}</p>
+                    {/* <RichTextEditor>{blog.blog}</RichTextEditor> */}
+                     <span dangerouslySetInnerHTML = {{ __html: blog.blog }}></span>
                     <span>Adam Reed</span>
                 </div>
             </div>  

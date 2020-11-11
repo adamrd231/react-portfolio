@@ -8,7 +8,7 @@ function Blogs(props) {
 
     return (
 
-    <div className="home-page-blogs">
+    <div id="blogs" className="home-page-blogs">
 
         <div className="overall-blog-container">
             {/* BLog layout, pagination or choosing how many to display */}
@@ -18,19 +18,21 @@ function Blogs(props) {
                     <div key={blog.id} className="blog-post clickable" onClick={blogClicked(blog)}>
                         <h2>{blog.title}</h2>
                         <p>{blog.created_on}</p>
-                        <p>{blog.blog}</p>
+                        <p dangerouslySetInnerHTML = {{ __html: blog.blog }}></p>
                         <p>Adam Reed</p>
                     </div>
+                    
                 )
+           
             })}
             </div>
 
             {/* BLog menu */}
             <div className="blog-menu" >
-                <p>Recent Blogs</p><hr></hr>
+                <p><strong>Recent Blogs</strong></p><hr></hr>
                 { props.blogs && props.blogs.map( blog => {
                     return (
-                        <p className="clickable" onClick={blogClicked(blog)}>{blog.title}</p>
+                        <p className="clickable blog-menu-items" onClick={blogClicked(blog)}>{blog.title}</p>
                     )
                 })}
             </div>

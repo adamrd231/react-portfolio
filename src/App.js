@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
+
 import Menu from './components/menu';
 import LandingPage from './components/landing_page';
 import Portfolio from './components/portfolio';
@@ -9,7 +10,6 @@ import Blogs from './components/blogs';
 import SingleProjectTemplate from './components/single-project-template';
 import SingleBlogTemplate from './components/single-blog-template.js';
 
-import $ from 'jquery';
 
 // import { useFetch } from './hooks/useFetch';
 
@@ -62,6 +62,7 @@ function App() {
    }, [])
 
 
+  
   if (selectedEntry) { return <SingleProjectTemplate entry={selectedEntry}/> }
 
   if (selectedBlog) { return <SingleBlogTemplate blog={selectedBlog} /> }
@@ -75,6 +76,7 @@ function App() {
         <div>
             
             <Portfolio entries={entries} entryClicked={loadEntry}/>
+
             <Blogs blogs={blogs} blogClicked={loadBlog} blogs={blogs}/>
             <Footer />
         </div>

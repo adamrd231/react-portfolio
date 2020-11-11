@@ -1,20 +1,17 @@
 import React from 'react';
-
+import { HashRouter, Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 function Menu() {
 
+
+
     return (
         <div className="menu">
-            <a href="http://localhost:3000/react-portfolio">
-
-                <p className="link clickable">Home</p> 
-            </a>
-            
-            <a href="http://localhost:3000/react-portfolio">
-                <p className="link clickable">Portfolio</p> 
-            </a>
-            <p className="link clickable">Blog</p> 
-            <p className="link clickable">Contact</p> 
+            <Link className="link clickable" to="/">Home</Link>
+            <HashLink className="link clickable" to="#portfolio">Portfolio</HashLink>
+            <HashLink className="link clickable" to="#blogs">Blog</HashLink>
+            <HashLink className="link clickable" to="#footer">Contact</HashLink>
         </div>
         
     )
