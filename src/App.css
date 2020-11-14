@@ -22,7 +22,7 @@ p {
 
 img {
   width: 100%;
-  height: 110%;
+  height: 100%;
   object-fit: cover;
   object-position: 0% 50%;
   overflow: hidden;
@@ -154,6 +154,10 @@ a {
   flex-direction: row;
 }
 
+.home-page-portfolio {
+  height: 100%;
+  width: 100%;
+}
 
 /*** SINGLE-PAGE SECTION STYLING ***/
 /* ============================== */
@@ -236,7 +240,11 @@ a {
 
 .blogs-container {
   flex: 4;
-  padding: 3em;
+  
+  padding-top: 3em;
+  padding-right: 11em;
+  padding-bottom: 3em;
+  padding-left: 2em;
   
 
 }
@@ -244,6 +252,10 @@ a {
 .blog-menu {
   flex: 1;
   width: 80%;
+}
+
+.blog-text {
+  font-size: 1.2em;
 }
 
 
@@ -259,6 +271,19 @@ a {
 .blog-post {
   border-bottom: 1px solid white;
 }
+
+.blog-author {
+  padding-top: 2em;
+}
+
+/*** Blogs home page styling ***/
+
+.blogs-template-home {
+  width: 80%;
+  padding: 6em;
+  padding-top: 2em;
+}
+
 /*** Single Page BLOG SECTION STYLING ***/
 /* ============================== */
 .single-page-blog {
@@ -266,7 +291,7 @@ a {
   flex-direction: row;
   width: 66%;
   padding: 9em;
-  padding-top: 3em;
+  padding-top: 1em;
   padding-right: 15em;
 }
 
@@ -274,6 +299,10 @@ a {
   padding-right: 5em;
 }
 
+.single-page-blog a {
+  cursor: pointer;
+  color: rgb(81, 183, 218);
+}
 
 /*** FOOTER SECTION STYLING ***/
 /* ============================== */
@@ -282,8 +311,8 @@ a {
   min-height: 24vh;
   background-color: #efefef;
   color: #222222;
-  padding: 2em;
-  padding-left: 5em;
+  padding: 3em;
+  padding-left: 7em;
   padding-right: 15em;
   display: flex;
   flex-direction: row;

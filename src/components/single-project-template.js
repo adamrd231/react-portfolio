@@ -1,64 +1,61 @@
-import React, { useState, useEffect } from 'react';
-import Menu from './menu';
+import React, { useEffect } from 'react';
+import SecondaryMenu from './secondary-menu';
 import Footer from './footer';
-import { API } from '../api-service';
 
 function SingleProjectTemplate(props) {
 
-    const ent = props.entry;
-
-    const [imageSelected, setImageSelected] = useState(null);
+    const ent = props.location.state;
+    console.log(ent)
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
 
-    return <div className="single-page-project App">
+    return  (
+        <div className="single-page-project App">
+            <SecondaryMenu />
+            <div className="single-page-project-container">
 
-                <Menu />
+            {/* This is the information section */}
+            <div className="single-page-project-copy">
+                <h1>{ent.entry.title}</h1>
+                <h2>{ent.entry.tagline}</h2>
+                <p><strong>Tools: </strong>{ent.entry.technology}</p>
                 
-                <div className="single-page-project-container">
+                <span dangerouslySetInnerHTML = {{ __html: ent.entry.description}}></span>
 
-                    {/* This is the information section */}
-                    <div className="single-page-project-copy">
-                        <h1>{ent.title}</h1>
-                        <h2>{ent.tagline}</h2>
-                        <p><strong>Tools: </strong>{ent.technology}</p>
-                        <span dangerouslySetInnerHTML = {{ __html: ent.description}}></span>
-                        <a className="clickable" href={ent.website}>
-                            <button className="app-store-button clickable">{ent.website_button_text}</button>
-                        </a>
-                        
-
-                        <div className="quote-box">
-                            { ent.quote_string.map( quote => {
-                                return (
-                                    <div className="quote-container">
-                                        <p className="quote-text"><strong>"</strong> {quote[0]} <strong>"</strong> </p>
-                                        <p className="author-text">- {quote[1]}</p>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                        
-
-                    </div>
-
-                    {/* This is the image layout, pulls from the landing page */}
-                    <div>
-                        <img 
-                            className="single-page-image" 
-                            src={`http://127.0.0.1:8000/${ent.image_url}`} 
-                            alt="Project Images"
-                            >
-                        </img>
-                    </div>
+                <a className="clickable" href={ent.entry.website}>
+                    <button className="app-store-button clickable">{ent.entry.website_button_text}</button>
+                </a>
+                
+                <div className="quote-box">
+                    { ent.entry.quote_string.map( quote => {
+                        return (
+                            <div key={quote} className="quote-container">
+                                <p className="quote-text"><strong>"</strong> {quote[0]} <strong>"</strong> </p>
+                                <p className="author-text">- {quote[1]}</p>
+                            </div>
+                        )
+                    })}
                 </div>
-                
-                <Footer />
-                
-            </div>;
+            </div>
+
+            {/* This is the image layout, pulls from the landing page */}
+            <div>
+                <img 
+                    className="single-page-image" 
+                    src={`http://127.0.0.1:8000/${ent.entry.image_url}`} 
+                    alt="Project Images"
+                    >
+                </img>
+            </div>
+        </div>
+        <Footer />
+        
+    </div>
+    )
+
     }
 
 export default SingleProjectTemplate;
