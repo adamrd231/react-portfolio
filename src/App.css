@@ -71,7 +71,7 @@ a {
   display: flex;
   flex-direction: row;
   padding: 1em;
-  margin-left: 4em;
+  width: 100%;
 }
 
 
@@ -80,6 +80,7 @@ a {
 
 .landing-page {
   min-height: 95vh;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -239,14 +240,10 @@ a {
 
 
 .blogs-container {
-  flex: 4;
-  
-  padding-top: 3em;
-  padding-right: 11em;
-  padding-bottom: 3em;
-  padding-left: 2em;
-  
-
+  width: 75%;
+  margin: auto;
+  padding-top: 3em; 
+  padding-bottom: 5em; 
 }
 
 .blog-menu {
@@ -308,12 +305,10 @@ a {
 /* ============================== */
 
 .footer {
-  min-height: 24vh;
+  min-height: 23vh;
   background-color: #efefef;
   color: #222222;
   padding: 3em;
-  padding-left: 7em;
-  padding-right: 15em;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -321,19 +316,119 @@ a {
 
 }
 
-.footer-technology {
-  margin-left: 4em;
-}
-
 .footer-icons {
   width: 3em;
   height: 3em;
   padding-right: 1.66em;
+  
+}
 
+.footer-icons:hover {
+  transform: scale(1.15);
 }
 
 .footer-icon-container {
   display: flex;
   flex-direction: column;
   
+  
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.github:hover {
+  
+}
+
+.linkedin {
+
+}
+
+.instagram {
+  
+}
+
+@media screen and (max-width: 1024px) {
+  
+  .portfolio {
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5 minmax(0.1fr, 1fr));
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+  }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+  .blogs-container {
+    width: 100%;
+    padding-top: 1em; 
+    padding-bottom: 2em; 
+    font-size: 1em;
+  }
+
+  .home-page-blogs {
+    padding: 0.5em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+  }
+
+  .menu {
+    min-height: 3em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+    
+  .landing-page {
+    min-height: 95vh;
+    width: 100%;
+    font-size: .3em;
+
+  }
+
+  .single-page-blog {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding: 2em;
+    padding-top: 1em;
+  }
+  
+  .single-page-blog-container {
+    padding-right: 1em;
+  }
+
+  .single-page-project-container {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    box-sizing: border-box;
+    
+    flex-direction: row-reverse;
+  }
+
+  .single-page-project-copy {
+    padding: 1em;
+    width: 100%;
+    
+  }
+  
+
 }
