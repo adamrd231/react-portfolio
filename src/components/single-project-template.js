@@ -45,7 +45,7 @@ function SingleProjectTemplate(props) {
             <div>
                 <img 
                     className="single-page-image" 
-                    src={`http://127.0.0.1:8000/${ent.entry.image_url}`} 
+                    src={`https://website-portfolio-rdconcepts.herokuapp.com/${ent.entry.image_url}`} 
                     alt="Project Images"
                     >
                 </img>
