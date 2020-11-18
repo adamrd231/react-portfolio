@@ -2,7 +2,7 @@ export class API {
 
     static getPortfolioWork(token) {
 
-        return fetch("website-portfolio-rdconcepts.herokuapp.com/projects/projects/", {
+        return fetch("https://website-portfolio-rdconcepts.herokuapp.com/projects/projects/", {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
