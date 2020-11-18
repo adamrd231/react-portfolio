@@ -8,7 +8,7 @@ function Footer() {
                 <h2>Links</h2>
                 <div className="links-container">
                     <a href="https://www.instagram.com/adamrd231/">
-                        <img className="footer-icons" src="https://website-portfolio-rdconcepts.herokuapp.com/photos/insta-clean_I2cOfBe.png" alt="Instagram"/>    
+                        <img className="footer-icons" src="https://website-portfolio-rdconcepts.herokuapp.com/photos/insta-clean_4Wgrb3W.png" alt="Instagram"/>    
                     </a>
                     <a href="https://www.linkedin.com/in/rdconcepts/">
                         <img className="footer-icons" src="https://website-portfolio-rdconcepts.herokuapp.com/" alt="Instagram"/>
