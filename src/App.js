@@ -29,7 +29,7 @@ function App() {
   }, [])
 
   useEffect( () => {
-    fetch("http://127.0.0.1:8000/projects/blog/", {
+    fetch("https://website-portfolio-rdconcepts.herokuapp.com/projects/blog/", {
     method: 'GET',
     headers: {
        'Content-Type': 'application/json',
