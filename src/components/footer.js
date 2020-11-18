@@ -8,13 +8,13 @@ function Footer() {
                 <h2>Links</h2>
                 <div className="links-container">
                     <a href="https://www.instagram.com/adamrd231/">
-                        <img className="footer-icons" src="http://127.0.0.1:8000/photos/insta-clean_SWrOn0R.png" alt="Instagram"/>    
+                        <img className="footer-icons" src="https://website-portfolio-rdconcepts.herokuapp.com/photos/insta-clean_I2cOfBe.png" alt="Instagram"/>    
                     </a>
                     <a href="https://www.linkedin.com/in/rdconcepts/">
-                        <img className="footer-icons" src="http://127.0.0.1:8000/photos/linkedin-clean_JuIR7Ji.png" alt="Instagram"/>
+                        <img className="footer-icons" src="https://website-portfolio-rdconcepts.herokuapp.com/" alt="Instagram"/>
                     </a>
                     <a href="https://github.com/adamrd231">
-                        <img className="footer-icons" src="http://127.0.0.1:8000/photos/github-clean_gvqukXQ.png" alt="Instagram"/>
+                        <img className="footer-icons" src="https://website-portfolio-rdconcepts.herokuapp.com/" alt="Instagram"/>
                     </a>
                 </div>   
             </div>
