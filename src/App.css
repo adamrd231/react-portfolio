@@ -224,7 +224,7 @@ a {
   padding-bottom: 8em;
   background:
     linear-gradient(90deg, rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 1)), 
-    url(http://127.0.0.1:8000/photos/landing-page.jpeg);
+    url(https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/landing-page.jpeg);
   /* background-image: url("http://127.0.0.1:8000/photos/pexels-photo-160107.jpeg"); */
   background-repeat: no-repeat;
   background-size: cover;
