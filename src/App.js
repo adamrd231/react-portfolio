@@ -16,7 +16,7 @@ function App() {
   const [blogs, setBlogs] = useState([]);
 
   useEffect( () => {
-   fetch("https://website-portfolio-rdconcepts.herokuapp.com/projects/projects/", {
+   fetch("http://127.0.0.1:8000/projects/projects/", {
      method: 'GET',
      headers: {
         'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ function App() {
   }, [])
 
   useEffect( () => {
-    fetch("https://website-portfolio-rdconcepts.herokuapp.com/projects/blog/", {
+    fetch("http://127.0.0.1:8000/projects/blog/", {
     method: 'GET',
     headers: {
        'Content-Type': 'application/json',

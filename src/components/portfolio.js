@@ -17,7 +17,7 @@ function Portfolio(props) {
                             }
                         }}>
                             <img 
-                                src={`https://website-portfolio-rdconcepts.herokuapp.com/${entry.image_url}`} 
+                                src={`http://127.0.0.1:8000/${entry.image_url}`} 
                                 alt="Project Images"  >
                             </img>
                         </Link>
