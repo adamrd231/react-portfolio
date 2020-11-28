@@ -17,7 +17,7 @@ function Portfolio(props) {
                             }
                         }}>
                             <img 
-                                src={`http://127.0.0.1:8000/${entry.image_url}`} 
+                                src={`https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/${entry.image_url}`} 
                                 alt="Project Images"  >
                             </img>
                         </Link>
