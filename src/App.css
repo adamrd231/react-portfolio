@@ -5,7 +5,7 @@
   color: white;
   display: grid;
   min-height: 100vh;
-
+  
 
 }
 
@@ -71,8 +71,14 @@ a {
   min-height: 3em;
   display: flex;
   flex-direction: row;
-  padding: 1em;
   width: 100%;
+  padding-top: 0.66em;
+  padding-bottom: 0.66em;
+}
+
+
+.menu-item {
+
 }
 
 
