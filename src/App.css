@@ -1,16 +1,16 @@
 /*** Overall Syling ***/
 
 .App {
-  background-color: #222222;
-  color: white;
-  display: grid;
+  background-color: #ffffff;
+  color: #222;
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-width: 1400px;
+  margin: auto;
+} 
 
-}
-
-.App-header {
-  min-height: 100vh;
+html {
+  background-color: #efefef;
 }
 
 
@@ -40,7 +40,7 @@ img {
 }
 
 a {
-  color: white;
+  color: #222;
   text-decoration: none;
   cursor: pointer;
 }
@@ -74,11 +74,12 @@ a {
   width: 100%;
   padding-top: 0.66em;
   padding-bottom: 0.66em;
+  
 }
 
 
 .menu-item {
-
+  color: #222;  
 }
 
 
@@ -86,47 +87,52 @@ a {
 /* ======================== */
 
 .landing-page {
-  min-height: 95vh;
-  width: 100%;
+  min-height: 50vh;
   display: flex;
+  justify-content: center;
   flex-wrap: nowrap;
   flex-direction: column;
-  background:
-  linear-gradient(90deg, rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 1)), 
-  url(https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/landing-page.jpeg);
-
+  padding-left: 10%;
+  color: #222222;
   background-repeat: no-repeat;
   background-size: cover;
   
 }
 
 .landing-container {
-  margin: auto;
-  margin-left: 5em;
+  justify-content: flex-start;
 }
 
 .landing-title {
-  font-size: 8em;
+  font-size: 5em;
   margin-bottom: 0;
+  font-weight: 900;
 }
 
 .landing-description {
   font-weight: bold;
   margin-top: 0;
+  font-size: 1em;
 }
 
 
 
 /*** PORTFOLIO SECTION STYLING ***/
 /* ============================== */
+.portfolio-container {
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3em;
+}
 
-.portfolio {
-  position: relative;
-  display: grid;  
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, minmax(0.1fr, 1fr));
+.portfolio-box {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   margin: auto;
   overflow: hidden;
+  
 }
 
 
@@ -134,17 +140,31 @@ a {
   margin-left: 3em;
 }
 
+.porfolio-slug-section {
+  flex-direction: column;
+  padding-top: 5em;
+  width: 33.3%;
+}
+
 
 .portfolio-entry {
   align-items: center;
-  display: flex;
-  flex-direction: column;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
   z-index: 1;
   transition: 1s;
-  
+  padding-left: 1.66em;
+  padding-right: 0;
+  padding-bottom: 1.66em;
+}
+
+#up-down-timer {
+  padding-left: 0 !important;
+}
+
+.portfolio-entry img {
+  height: 25em;
 }
 
 .portfolio-entry:hover {
@@ -153,9 +173,7 @@ a {
   overflow: hidden;
 }
 
-.overlay {
 
-}
 
 .portfolio-technology {
   display: flex;
@@ -225,25 +243,24 @@ a {
 /* ============================== */
 
 .home-page-blogs {
-  padding: 2em;
-  padding-top: 12em;
-  padding-bottom: 15em;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  padding-top: 5em;
+  padding-bottom: 9em;
+  padding-left: 10%;
+  
 }
 
 .overall-blog-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
 
+  
 }
 
 
 .blogs-container {
-  width: 66%;
-  margin: auto;
+  
 
 }
 
@@ -277,9 +294,13 @@ a {
 /*** Blogs home page styling ***/
 
 .blogs-template-home {
-  width: 80%;
-  padding: 6em;
   padding-top: 2em;
+}
+
+.lineBreak {
+  border: 1px solid #999;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 /*** Single Page BLOG SECTION STYLING ***/
@@ -317,7 +338,7 @@ a {
 .footer-background {
   display: flex;
   background:
-  linear-gradient(90deg, rgba(255, 255, 255, 0.95), rgb(207, 207, 207)), 
+  linear-gradient(90deg, rgba(255, 255, 255, 0.97), rgb(207, 207, 207)), 
   url(https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/landing-page.jpeg);
   min-height: 66vh;
   width: 100%;
@@ -329,7 +350,7 @@ a {
   display: flex;
   flex-wrap: nowrap;
 
-  min-height: 15vh;
+  min-height: 18vh;
   background-color: #fff;
   align-items: center;
   justify-content: center;
@@ -362,6 +383,8 @@ a {
   color: #00a4ff;
 }
 
+
+
 .footer-text-container-two {
   display: flex;
   flex-direction: row;
@@ -370,9 +393,9 @@ a {
 }
 
 .footer-icons {
-  width: 3em;
-  height: 3em;
-  padding-right: 1.66em;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 1.3em;
   
 }
 
@@ -381,18 +404,6 @@ a {
 }
 
 
-
-.github:hover {
-  
-}
-
-.linkedin {
-
-}
-
-.instagram {
-  
-}
 
 @media screen and (max-width: 1024px) {
   

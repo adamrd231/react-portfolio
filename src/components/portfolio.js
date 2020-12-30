@@ -3,28 +3,42 @@ import { Link } from 'react-router-dom';
 
 function Portfolio(props) {
 
+
     return (
-        <div id="portfolio" className="portfolio"> 
-            { props.entries && props.entries.map( entry => {    
-                return (
-                    <div className="portfolio-entry clickable" key={entry.id}>
-                        <Link
-                            className="home-page-portfolio"
-                            to={{
-                            pathname: "/portfolio/" + entry.slug,
-                            state: {
-                                entry: entry
-                            }
-                        }}>
-                            <img 
-                                src={`https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/${entry.image_url}`} 
-                                alt="Project Images"  >
-                            </img>
-                        </Link>
-                      
-                    </div>
-                )
-            })}
+        <div className="portfolio-container"> 
+
+            <div className="portfolio-box">
+                { props.entries && props.entries.slice(0, 3).map( entry => {    
+                        return (
+                            <div className="portfolio-entry clickable" id={entry.slug} key={entry.id}>
+                                <Link
+                                    className="home-page-portfolio"
+                                    to={{
+                                    pathname: "/portfolio/" + entry.slug,
+                                    state: {
+                                        entry: entry
+                                    }
+                                }}>
+                                    <img 
+                                        src={`https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/${entry.image_url}`} 
+                                        alt="Project Images"  >
+                                    </img>
+                            <h2>{entry.title}</h2>
+                            
+                                </Link>
+                            
+                            </div>
+                        )
+                })}
+            </div>
+            
+            <div className="porfolio-slug-section">
+                <p>For more app development, UX and UI design, Illustrations or to check out my work, click the link below.</p>
+                <Link>
+                    <h2>Explore full portfolio.</h2>
+                </Link>
+            </div>
+            
         </div>
         
     )

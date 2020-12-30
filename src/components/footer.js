@@ -16,12 +16,14 @@ function Footer() {
                         <a href="mailto:someone@example.com">
                             <p className="footer-text footer-link">contact@rdConcepts.design</p>
                         </a>
-                        
-                        <p className="footer-text">231.445.1463</p>
+
+                        <p>|</p>
 
                         <a href="https://apps.apple.com/us/developer/rd-concepts/id1293498470">
                             <p className="footer-text footer-link">App Store</p>
                         </a>
+
+                        <p>|</p>
 
                         <a href="https://play.google.com/store/apps/developer?id=adamrd231">
                             <p className="footer-text footer-link">Google Play Store</p>

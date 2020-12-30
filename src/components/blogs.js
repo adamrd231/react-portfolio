@@ -8,6 +8,7 @@ function Blogs(props) {
     return (
 
     <div id="blogs" className="home-page-blogs">
+        <p>Latest News</p>
         <div className="overall-blog-container">
             {/* BLog layout, pagination or choosing how many to display */}
             <div className="blogs-container">
@@ -23,12 +24,9 @@ function Blogs(props) {
                                     blog: blog
                                 }
                              }}>
+                                 <div className="lineBreak"></div>
                                 <h2>{blog.title}</h2>
-                                
-                                <p>{newDate}</p>
-                                <p className="blog-text" dangerouslySetInnerHTML = {{ __html: blog.blog.substring(0, MAX_LENGTH) + "..." }}></p>
-                                <strong><p>Click to Read More</p></strong>
-                                <p className="blog-author">Adam Reed</p>
+                                <div className="lineBreak"></div>
                             </Link>
                         </div>
                     )
