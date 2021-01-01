@@ -9,8 +9,9 @@ function Footer() {
 
                 <div className="footer-text-container">
                     <div className="footer-title-container">
-                        <p className="footer-title">rdConcepts</p>
-                        <p className="footer-text">Copyright RD Concepts, LLC All Rights Reserved.</p>
+                        <h1 className="footer-title">rdConcepts</h1>
+                        <p className="footer-text">rdConcepts is a Design & Development studio, working remotely, I can be hired to work with a team or take projects from start to finish. Copyright RD Concepts, LLC All Rights Reserved.</p>
+                        
                     </div>
                     <div className="footer-text-container-two">
                         <a href="mailto:someone@example.com">
