@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 function Menu() {
 
     return (
-       <div className="menu-container">
+       <div id="home" className="menu-container">
              <div className="logo">
                 <img 
                     src={`https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/photos/rd-logo-750.png`} 

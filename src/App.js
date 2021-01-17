@@ -25,13 +25,13 @@ function App() {
       <div className="App">
         <header>
           <Menu />
-          <LandingPage />
         </header>
-        <div>
+        <React.Fragment>
+          <LandingPage />
           <Portfolio entries={entries}/>
           <Blogs blogs={blogs} />
           <Footer />
-        </div>
+        </React.Fragment>
           
       </div>
     );
