@@ -17,7 +17,7 @@ function Blogs(props) {
     if (blogLoaded) {
         return (
             <div id="blogs" className="home-page-blogs">
-                <p>Latest News</p>
+                <p>My Latest Thoughts</p>
                 <div className="overall-blog-container">
                     {/* BLog layout, pagination or choosing how many to display */}
                     <div className="blogs-container">

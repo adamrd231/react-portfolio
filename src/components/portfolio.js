@@ -52,7 +52,7 @@ function Portfolio(props) {
     
                                     <h2 className="portfolio-t">{entry.title}</h2>
                                     <div className={customClassName}>
-                                        <span dangerouslySetInnerHTML = {{ __html: entry.description.slice(0, 75) + "..."}}></span>
+                                        <span dangerouslySetInnerHTML = {{ __html: entry.description.slice(0, 150) + "..."}}></span>
                                         <p>Click to read more.</p>
                                     </div>
                                 </Link>      
