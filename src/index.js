@@ -7,6 +7,7 @@ import { Route, BrowserRouter } from 'react-router-dom';
 import BlogsMenu from './components/blogs-template';
 import SingleBlogTemplate from './components/single-blog-template';
 import SingleProjectTemplate from './components/single-project-template';
+import AllProjectsPage from './components/all-projects-page';
 
 const routing = (
   <React.StrictMode>
@@ -14,6 +15,7 @@ const routing = (
 
           <Route exact path="/" component={App}></Route>
           <Route exact path="/blogs" component={BlogsMenu}></Route>
+          <Route path ="/portfolio" component={AllProjectsPage}></Route>
           <Route path="/blogs/:slug" component={SingleBlogTemplate}></Route>
           <Route path="/portfolio/:slug" component={SingleProjectTemplate}></Route>
 

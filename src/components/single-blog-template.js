@@ -15,19 +15,19 @@ function SingleBlogTemplate(props) {
      
     }, []);
 
-    let newDate = Date((blog.blog.created_on) )
+    let newDate = blog.blog.created_on
 
     return (
-        <div className="App">
-            <SecondaryMenu /> 
-            <div className="single-page-blog">
-                <div className="single-page-blog-container">
+        <div className="App single-page-blog-container">
+            <div className="eighty-width">
+                <SecondaryMenu /> 
+                <div className="single-page-blog">
                     <h1>{blog.blog.title}</h1>
                     <p>{newDate}</p>
-                     <p className="blog-text" dangerouslySetInnerHTML = {{ __html: blog.blog.blog }}></p>
+                    <p className="blog-text" dangerouslySetInnerHTML = {{ __html: blog.blog.blog }}></p>
                     <p className="blog-author">Adam Reed</p>
-                </div>
-            </div>  
+                </div>  
+            </div>
             <Footer />
         </div>
         

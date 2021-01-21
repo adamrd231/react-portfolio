@@ -14,8 +14,19 @@ function SingleProjectTemplate(props) {
 
     return  (
         <div className="single-page-project App">
-            <SecondaryMenu />
+            
             <div className="single-page-project-container">
+            <SecondaryMenu />
+
+            {/* This is the image layout, pulls from the landing page */}
+            <div className="single-page-image-container">
+                <img 
+                    className="single-page-image" 
+                    src={`https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/${ent.entry.image_url}`} 
+                    alt="Project Images"
+                    >
+                </img>
+            </div>
 
             {/* This is the information section */}
             <div className="single-page-project-copy">
@@ -41,15 +52,7 @@ function SingleProjectTemplate(props) {
                 </div>
             </div>
 
-            {/* This is the image layout, pulls from the landing page */}
-            <div>
-                <img 
-                    className="single-page-image" 
-                    src={`https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/${ent.entry.image_url}`} 
-                    alt="Project Images"
-                    >
-                </img>
-            </div>
+            
         </div>
         <Footer />
         

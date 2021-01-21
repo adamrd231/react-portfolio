@@ -63,9 +63,15 @@ function Portfolio(props) {
                 
                 <div className={"porfolio-slug-section"}>
                     <p>For more app development, UX and UI design, Illustrations or to check out my work, see where I have been traveling, what I have been designing. click the link below.</p>
-                    <Link>
-                        <h2>Explore full portfolio.</h2>
+                    <Link to={{
+                        pathname: "/portfolio",
+                        state: {
+                            projects: props.entries
+                        }
+                        }}><h2>Explore full portfolio.</h2>
                     </Link>
+                        
+                    
                 </div>
                 
             </div>

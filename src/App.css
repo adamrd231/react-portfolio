@@ -305,10 +305,11 @@ a:hover {
   width: 70%;
   margin: auto;
   margin-bottom: 9em;
-  display: grid;
-  grid-template-columns: 2fr 1.5fr;
+  display: flex;
+  flex-direction: column;
   align-items: stretch;
   box-sizing: border-box;
+
   
 }
 
@@ -335,18 +336,24 @@ a:hover {
   font-weight: bold;
 }
 
+.single-page-image-container {
+  justify-content: flex-end;  
+}
+
 
 .single-page-image {
   width: 100%;
-  height: 100%;
+  height: 33em;
+  max-height: 33%;
+  object-position: top;
   border-radius: 1em;
   box-sizing: border-box;
+  
 }
 
 .single-page-project-copy {
   padding: 1em;
   box-sizing: border-box;
-  margin-right: 7em;
   
 }
 
@@ -418,22 +425,43 @@ a:hover {
 
 /*** Single Page BLOG SECTION STYLING ***/
 /* ============================== */
+.single-page-blog-menu {
+  padding-right: 5em;
+}
+
 .single-page-blog {
   display: flex;
-  flex-direction: row;
-  width: 66%;
-  padding: 9em;
+  flex-direction: column;
   padding-top: 1em;
-  padding-right: 15em;
+  font-size: 1.25em;
 }
 
 .single-page-blog-container {
-  padding-right: 5em;
+
 }
 
 .single-page-blog a {
   cursor: pointer;
   color: rgb(81, 183, 218);
+  
+}
+
+.menu-2 {
+  padding: 5em;
+  padding-left: 0;
+  padding-bottom: 2em;
+  font-weight: 800;
+  font-size: 1.2em;
+
+
+}
+
+.eighty-width {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 7em;
 }
 
 /*** FOOTER SECTION STYLING ***/
@@ -680,5 +708,14 @@ a:hover {
 
   .porfolio-slug-section {
     width: 80%;
+  }
+
+  .landing-container {
+    margin-top: 0;
+    padding-top: 0 !important;
+  }
+
+  .landing-title {
+    margin-top: 0.5em;
   }
 }

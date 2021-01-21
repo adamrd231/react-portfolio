@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 function SecondaryMenu() {
 
     return (
-        <div className="menu">
-            <Link to="/" className="link clickable">Home</Link>
+        <div className="menu-2">
+            <Link to="/">Home</Link>
         </div>
         
     )
