@@ -20,7 +20,7 @@ function Blogs() {
                     <div className="blogs-container">
                         { blogLoaded && blogLoaded.map( blog => {
         
-                            let newDate = Date((blog.created_on) )
+                            let newDate = Date((blog.created_on))
         
                             return (
                                 <div key={blog.id} className="blog-post clickable">

@@ -9,18 +9,6 @@ import Blogs from './components/blogs';
 
 function App() {
 
-  // create state for portfolio entries
-  // const [entries, setEntries] = useState([]);
-
-  // Create state for blogs
-  const [blogs, setBlogs] = useState([]);
-
-
-  // useEffect( () => {
-  //   API.getProjects().then( projects => setEntries(projects))
-  //   API.getBlogs().then( blogs => setBlogs(blogs))
-  // }, [])
-
  return (
       <div className="App">
         <header>

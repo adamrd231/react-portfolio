@@ -134,15 +134,16 @@ a:hover {
 }
 
 .menu-2 {
-  min-height: 5em;
+  min-height: 6em;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   margin: auto;
   padding: 0.55em;
   padding-left: 3em;
   font-weight: 700;
+  border-bottom: 0.1em solid #ededed;
   
 }
 
@@ -377,18 +378,23 @@ a:hover {
 }
 
 .overall-blog-container {
-  background-color: #ededed;
+
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 
-  padding-top: 4em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-top: 1em;
+
 }
 
 .blogs-container {
+  background-color: #ededed;
   width: 100%;
+  padding: 5em;
+}
+
+.blogs-container:hover {
+  opacity: 0.9;
 }
 
 .blog-post {

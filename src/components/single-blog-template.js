@@ -3,19 +3,25 @@ import SecondaryMenu from './secondary-menu';
 import Footer from './footer';
 // Import React SummerNote modules
 // import RichTextEditor from './summernote';
-
+const formatDate = (dateString) => {
+    const options = { year: "numeric", month: "long", day: "numeric" }
+    return new Date(dateString).toLocaleDateString(undefined, options)
+  }
 
 function SingleBlogTemplate(props) {
 
     const blog = props.location.state;
     console.log(blog)
 
+    
+
     useEffect(() => {
         window.scrollTo(0, 0);
      
     }, []);
 
-    let createdOn = blog.blog.created_on
+    let createdOn = formatDate(blog.blog.created_on)
+
 
     return (
         <div className="App single-page-blog-container">

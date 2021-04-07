@@ -22,7 +22,7 @@ function SingleProjectTemplate(props) {
             <div className="single-page-image-container">
                 <img 
                     className="single-page-image" 
-                    src={`https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/${ent.entry.image_url}`} 
+                    src={`https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/${ent.image_url}`} 
                     alt="Project Images"
                     >
                 </img>
@@ -30,18 +30,18 @@ function SingleProjectTemplate(props) {
 
             {/* This is the information section */}
             <div className="single-page-project-copy">
-                <h1>{ent.entry.title}</h1>
-                <h2>{ent.entry.tagline}</h2>
-                <p><strong>Tools: </strong>{ent.entry.technology}</p>
+                <h1>{ent.title}</h1>
+                <h2>{ent.tagline}</h2>
+                <p><strong>Tools: </strong>{ent.technology}</p>
                 
-                <span dangerouslySetInnerHTML = {{ __html: ent.entry.description}}></span>
+                <span dangerouslySetInnerHTML = {{ __html: ent.description}}></span>
 
-                <a className="clickable" href={ent.entry.website}>
-                    <button className="app-store-button clickable">{ent.entry.website_button_text}</button>
+                <a className="clickable" href={ent.website}>
+                    <button className="app-store-button clickable">{ent.website_button_text}</button>
                 </a>
                 
                 <div className="quote-box">
-                    { ent.entry.quote_string.map( quote => {
+                    { ent.quote_string.map( quote => {
                         return (
                             <div key={quote} className="quote-container">
                                 <p className="quote-text"><strong>"</strong> {quote[0]} <strong>"</strong> </p>
