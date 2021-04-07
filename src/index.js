@@ -15,7 +15,7 @@ const routing = (
 
           <Route exact path="/" component={App}></Route>
           <Route exact path="/blogs" component={BlogsMenu}></Route>
-          <Route path ="/portfolio" component={AllProjectsPage}></Route>
+          <Route path ="/fullPortfolio" component={AllProjectsPage}></Route>
           <Route path="/blogs/:slug" component={SingleBlogTemplate}></Route>
           <Route path="/portfolio/:slug" component={SingleProjectTemplate}></Route>
 

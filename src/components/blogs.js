@@ -1,27 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { API } from '../api-service';
 
-function Blogs(props) {
+function Blogs() {
 
     const MAX_LENGTH = 1000;
     const [ blogLoaded, SetBlogLoaded ] = useState(false);
 
     useEffect(() => {
-        if (props.blogs) {
-            SetBlogLoaded(true)
-        } else {
-            SetBlogLoaded(false)
-        }
-    },[props.blogs, SetBlogLoaded, blogLoaded])
+        API.getBlogs().then( blogs => { SetBlogLoaded(blogs) })
+    },[])
 
     if (blogLoaded) {
         return (
             <div id="blogs" className="home-page-blogs">
-                <p>My Latest Thoughts</p>
+                <h1 className="portfolio-title">Blogs</h1>
                 <div className="overall-blog-container">
                     {/* BLog layout, pagination or choosing how many to display */}
                     <div className="blogs-container">
-                        { props.blogs && props.blogs.map( blog => {
+                        { blogLoaded && blogLoaded.map( blog => {
         
                             let newDate = Date((blog.created_on) )
         

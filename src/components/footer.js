@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 function Footer() {
@@ -15,6 +14,13 @@ function Footer() {
                     </div>
 
                     <div className="app-link-container">
+                        <div className="store-container-3">
+                            <h3>Design</h3>
+                            <a href="https://apps.apple.com/us/app/engage-timer/id1470569685"><p className="footer-link">SBF Product Design</p></a>
+                            <a href="https://apps.apple.com/us/developer/rd-concepts/id1293498470"><p className="footer-link">Printed Design</p></a>
+                            <a href="https://apps.apple.com/us/app/ediblethccalculator/id1303242056"><p className="footer-link">Billboard</p></a>
+                            <a href="https://itunes.apple.com/us/app/wooproducts/id1039566132?mt=8"><p className="footer-link">Photography</p></a>
+                        </div>
                         <div className="store-container-1">
                             <h3>App Store</h3>
                             <a href="https://apps.apple.com/us/app/engage-timer/id1470569685"><p className="footer-link">Engage Timer</p></a>

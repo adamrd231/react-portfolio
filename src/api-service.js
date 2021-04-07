@@ -6,7 +6,7 @@ var localURL = "http://127.0.0.1:8000/"
 export class API {
 
     static getProjects() {
-        return fetch(herokuURL + "projects/projects/", {
+        return fetch(localURL + "projects/projects/", {
             method: 'GET',
             headers: {
                'Content-Type': 'application/json',
@@ -17,7 +17,7 @@ export class API {
     }
 
     static getBlogs() {
-        return fetch(herokuURL + "projects/blog/", {
+        return fetch(localURL + "projects/blog/", {
             method: 'GET',
             headers: {
                'Content-Type': 'application/json',

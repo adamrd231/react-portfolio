@@ -6,20 +6,20 @@ import LandingPage from './components/landing_page';
 import Portfolio from './components/portfolio';
 import Footer from './components/footer';
 import Blogs from './components/blogs';
-import { API } from './api-service';
 
 function App() {
 
   // create state for portfolio entries
-  const [entries, setEntries] = useState([]);
+  // const [entries, setEntries] = useState([]);
 
   // Create state for blogs
   const [blogs, setBlogs] = useState([]);
 
-  useEffect( () => {
-    API.getProjects().then( projects => setEntries(projects))
-    API.getBlogs().then( blogs => setBlogs(blogs))
-  }, [])
+
+  // useEffect( () => {
+  //   API.getProjects().then( projects => setEntries(projects))
+  //   API.getBlogs().then( blogs => setBlogs(blogs))
+  // }, [])
 
  return (
       <div className="App">
@@ -28,8 +28,8 @@ function App() {
         </header>
         <React.Fragment>
           <LandingPage />
-          <Portfolio entries={entries}/>
-          <Blogs blogs={blogs} />
+          <Portfolio/>
+          <Blogs />
           <Footer />
         </React.Fragment>
           

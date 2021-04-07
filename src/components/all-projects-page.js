@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import SecondaryMenu from './secondary-menu';
 import Footer from './footer';
+import { API } from '../api-service';
+import { Link } from 'react-router-dom';
 
-function AllProjectsPage() {
+function AllProjectsPage(props) {
 
     const ent = props.location.state;
     console.log(ent)
@@ -17,19 +19,29 @@ function AllProjectsPage() {
 
     return  (
         <div className="App">
-            
-            <div className="all-projects-container">
             <SecondaryMenu />
+            <div className="portfolio-container">
+            
 
             {/* This is the image layout, pulls from the landing page */}
-            <div className="all-projects-image-container">
+            <div className="portfolio-box">
                 { entries.map( project => {
+                    // AWS Server where images are stored
+                    const source = 'https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/'
+
+                    // Return the image with the correct project url
                     return (
+                        <Link className="home-page-portfolio"
+                                        to={{
+                                            pathname: "/portfolio/" + project.slug,
+                                            state: project = project
+                                            }}>
                         <img 
-                            className="single-page-image" 
-                            src={`https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/${project.image_url}`} 
+                            className="all-projects-images" 
+                            src={(`${source + project.image_url}`)} 
                             alt="Project Images">
                         </img>  
+                        </Link>
                     ) 
                 })} 
             </div>
