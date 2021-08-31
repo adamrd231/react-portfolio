@@ -14,13 +14,7 @@ function Footer() {
                     </div>
 
                     <div className="app-link-container">
-                        <div className="store-container-3">
-                            <h3>Design</h3>
-                            <a href="https://apps.apple.com/us/app/engage-timer/id1470569685"><p className="footer-link">SBF Product Design</p></a>
-                            <a href="https://apps.apple.com/us/developer/rd-concepts/id1293498470"><p className="footer-link">Printed Design</p></a>
-                            <a href="https://apps.apple.com/us/app/ediblethccalculator/id1303242056"><p className="footer-link">Billboard</p></a>
-                            <a href="https://itunes.apple.com/us/app/wooproducts/id1039566132?mt=8"><p className="footer-link">Photography</p></a>
-                        </div>
+                        
                         <div className="store-container-1">
                             <h3>App Store</h3>
                             <a href="https://apps.apple.com/us/app/engage-timer/id1470569685"><p className="footer-link">Engage Timer</p></a>
@@ -34,6 +28,13 @@ function Footer() {
                             <a><p className="footer-link">Edible Calculator - Coming Soon!</p></a>
                             <a href="https://play.google.com/store/apps/details?id=co.wooproducts"><p className="footer-link">Wproducts for WooCommerce</p></a>
                         </div>
+                        <div className="store-container-3">
+                            <h3>Web Design</h3>
+                            <a href="https://shadowboxfarms.com/"><p className="footer-link">ShadowboxFarms</p></a>
+                            <a href="https://wproducts.co/"><p className="footer-link">WProducts</p></a>
+                            <a href="https://rdconcepts.design/"><p className="footer-link">rdConcepts Portfolio</p></a>
+                            
+                        </div>
                     </div>
                 </div>
                         
@@ -43,7 +44,7 @@ function Footer() {
                     </div>
                     <div className="footer-company-links">
                         <div className="flex-row underline">
-                            <h3>Newest Updates</h3>
+                            <h3>My Links</h3>
                             <p>-></p>
                         </div>
 
@@ -51,7 +52,7 @@ function Footer() {
                             
                             <div className="flex-row">   
                                 <div className="half-width">
-                                    <p className="small-font">Thank you for visiting my website, I bet you thought there was some technical Terms of Service of Privacy Policy information here huh?</p>
+                                    <p className="small-font">Thank you for visiting my website, I built this using React.js frontend and Python 3 with Django to host the backend rest API.</p>
                                 </div>
                                 <div className="flex-row">
                                    <a href="https://www.instagram.com/adamrd231/"><img className="footer-icons" src="https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/photos/insta-white.png" alt="Instagram"/>    </a>

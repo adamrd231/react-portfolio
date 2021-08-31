@@ -27,5 +27,26 @@ export class API {
           .then(response => response.json())
     }
     
+    static getCategories() {
+        return fetch(herokuURL + "projects/categories/", {
+            method: 'GET',
+            headers: {
+               'Content-Type': 'application/json',
+               'Authorization': 'Token f3bdc9d522e0b1ccbb860c6866d17ec7fdc31dad',
+            }
+          })
+          .then(response => response.json())
+    }
+
+    static getProjectsByCategory(category) {
+        return fetch(herokuURL + `projects/projects/${category}`, {
+            method: 'GET',
+            headers: {
+               'Content-Type': 'application/json',
+               'Authorization': 'Token f3bdc9d522e0b1ccbb860c6866d17ec7fdc31dad',
+            }
+          })
+          .then(response => response.json())
+    }
 
 }

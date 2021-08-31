@@ -12,11 +12,19 @@ function Portfolio() {
     
     // create state for portfolio entries
     const [entries, setEntries] = useState([]);
+    const [categories, setCategories] = useState([]);
     const [entriesLoaded, SetEntriesLoaded] = useState(false);
 
     useEffect(() => {
         API.getProjects()
             .then( projects => setEntries(projects))
+
+            API.getCategories()
+            .then(cats => setCategories(cats))
+    }, []);
+
+    useEffect(() => {
+        
     }, []);
 
     useEffect(() => {
@@ -56,11 +64,12 @@ function Portfolio() {
 
 
 
+
     // Main Component 
     if (entriesLoaded === true) {
         return (
             <div id="portfolio" className="portfolio-container"> 
-                <h1 className="portfolio-title">Recent Work</h1>
+                <h1 className="portfolio-title">Body of Work</h1>
                 <div className="portfolio-box" >
                     
                     { entries && entries.slice(0, 6).map( entry => {    
@@ -82,7 +91,17 @@ function Portfolio() {
                     })}
                 </div>
                 
-                <div className={"porfolio-slug-section"}>
+                <div className="porfolio-slug-section">
+                     <div className="category-container">
+                         <h3 className="category-item">Categories:</h3>
+                        { categories.map( categ => {
+                            return (
+                                <p className="category-item clickable">{categ.name}</p> 
+                            )
+                            
+                        })}
+                    </div>
+                    
                     <p>For more app development, UX and UI design, Illustrations or to check out my work, see where I have been traveling, what I have been designing. click the link below.</p>
                     <Link to={{
                         pathname: "/fullPortfolio",

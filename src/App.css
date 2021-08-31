@@ -111,6 +111,7 @@ a:hover {
   font-weight: 900;
 }
 
+
 /*** MENU STYLING ***/
 /* ================ */
 .menu-container {
@@ -127,7 +128,7 @@ a:hover {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  margin: auto;
+ 
   padding-top: 0.66em;
   padding-bottom: 0.66em;
   
@@ -164,6 +165,7 @@ a:hover {
 
 .icons img {
   width: 1.5em;
+  height: 1 em;
   padding: 0.25em;
 }
 
@@ -182,15 +184,27 @@ a:hover {
 .landing-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   width: 90%;
   margin: auto;
-  color: #222222;
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 70vh;
   
+  background: url('https://portfolio-website-adamrd231.s3.us-west-1.amazonaws.com/landing.png');
+  background-position: bottom right;
+  background-color: #ededed;
+  background-size: 500px 450px;
+  background-repeat: no-repeat;
+  padding: 1em;
+  border-bottom-left-radius: 3em;
+  border-top-right-radius: 3em;
+  margin-bottom: 3em;
+
 }
+.landing-image {
+  margin-top: -6em;
+}
+
 
 .landing-container {
   justify-content: flex-start;
@@ -204,11 +218,17 @@ a:hover {
 }
 
 .landing-title {
-  font-size: 12em;
+  font-size: 6em;
   font-weight: 900;
-  margin-bottom: -0.35em;
-  margin-left: 0;
-  margin-top: 0;
+  margin-bottom: 0;
+
+
+}
+
+.landing-group-text {
+  padding-top: 1em;
+  padding-left: 3em;
+  width: 50%;
 }
 
 .landing-description {
@@ -223,7 +243,8 @@ a:hover {
 }
 
 .landing-quote {
-  width: 72%;
+
+  margin-top: 0;
 }
 
 
@@ -240,11 +261,10 @@ a:hover {
 }
 
 .portfolio-title {
-  font-size: 12em;
+  font-size: 3em;
   font-weight: 900;
-  margin-bottom: -0.35em;
-  margin-left: 0;
-  margin-top: 0;
+  color: #333;
+
 }
 
 .portfolio-box {
@@ -283,7 +303,7 @@ a:hover {
 
 .porfolio-slug-section {
   flex-direction: column;
-  padding-top: 3em;
+  padding-top: 1em;
   width: 44%;
 }
 
@@ -292,12 +312,25 @@ a:hover {
 .portfolio-technology {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-page-portfolio {
   height: 100%;
   width: 100%;
 }
+
+.category-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.category-item {
+  padding-right: 0.5em;
+}
+
 
 
 
@@ -616,12 +649,37 @@ a:hover {
   justify-content: space-around;
 }
 
+@media screen and (max-width: 1200px) {
 
-@media screen and (max-width: 1024px) {
-
-
+  .landing-title, .portfolio-title {
+    font-size: 8em;
+  }
 
 }
+
+@media screen and (max-width: 1000px) {
+
+  .landing-title, .portfolio-title {
+    font-size: 8.5em;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .landing-title, .portfolio-title {
+    font-size: 7em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .landing-title, .portfolio-title {
+    font-size: 5em;
+  }
+}
+
+
 
 
 @media screen and (max-width: 700px) {
@@ -666,11 +724,11 @@ a:hover {
 
 
 
-  .landing-title {
-    font-size: 12em;
+  .landing-title, .portfolio-title {
+    font-size: 5em;
     font-weight: 900;
-    margin-bottom: -1em;
-    padding-bottom: -1em;
+    margin-bottom: -0.3em;
+    padding-bottom: 0em;
     margin-left: 0;
     margin-top: 0;
   }
@@ -723,6 +781,8 @@ a:hover {
     
   }
 
+ 
+
 
 
   .porfolio-slug-section {
@@ -732,6 +792,14 @@ a:hover {
   .landing-container {
     margin-top: 0;
     padding-top: 0 !important;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .landing-title, .portfolio-title {
+    font-size: 3em;
   }
 
 }

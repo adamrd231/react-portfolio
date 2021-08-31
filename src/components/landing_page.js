@@ -5,17 +5,16 @@ function LandingPage() {
     return (
         <React.Fragment>
             <div className="landing-page">
+                <div className="landing-group-text">
                 <h1 className="landing-title">Adam Reed.</h1>
-                <div className="landing-page-image">
-                    <ImageToLoad 
-                        src="https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/landing-full" 
-                        placeholder="https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/landing-placeholder"
-                        alt="Landing Page Image"></ImageToLoad>
+                <h2 className="landing-quote">"Digital designer and developer, fluent in brand design, website design and custom iOS development."</h2>
                 </div>
-
-                <div className="landing-page-quote-container">
-                    <h2 className="landing-quote">"Creative designer with a specialty in graphics, illustration and front-end design. Experience with marketing, brand-management, product-management, design and developing websites and mobile apps." </h2>
-                </div>    
+                
+                {/* <img 
+                    className="landing-image"
+                    src={`https://portfolio-website-adamrd231.s3.us-west-1.amazonaws.com/landing.png`} 
+                    alt="Landing-Page-Image"  >
+                </img> */}
             </div> 
             
         </React.Fragment>
