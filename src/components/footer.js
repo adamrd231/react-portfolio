@@ -20,19 +20,19 @@ function Footer() {
                             <a href="https://apps.apple.com/us/app/engage-timer/id1470569685"><p className="footer-link">Engage Timer</p></a>
                             <a href="https://apps.apple.com/us/developer/rd-concepts/id1293498470"><p className="footer-link">Dual Up Down Timer</p></a>
                             <a href="https://apps.apple.com/us/app/ediblethccalculator/id1303242056"><p className="footer-link">Edible THC Calculator</p></a>
-                            <a href="https://itunes.apple.com/us/app/wooproducts/id1039566132?mt=8"><p className="footer-link">Wproducts for WooCommerce</p></a>
                             <a href="https://apps.apple.com/us/developer/rd-concepts/id1293498470"><p className="footer-link">Adam's Calc</p></a>
                         </div>
                         <div className="store-container-2">
-                            <h3>Google Play</h3>
-                            <a><p className="footer-link">Edible Calculator - Coming Soon!</p></a>
-                            <a href="https://play.google.com/store/apps/details?id=co.wooproducts"><p className="footer-link">Wproducts for WooCommerce</p></a>
+                            <h3>Design</h3>
+                            <a><p className="footer-link">Packaging Design</p></a>
+                            <a><p className="footer-link">Producer Youtube Series</p></a>
+                            <a><p className="footer-link">ShadowboxFarms</p></a>
                         </div>
                         <div className="store-container-3">
                             <h3>Web Design</h3>
-                            <a href="https://shadowboxfarms.com/"><p className="footer-link">ShadowboxFarms</p></a>
-                            <a href="https://wproducts.co/"><p className="footer-link">WProducts</p></a>
-                            <a href="https://rdconcepts.design/"><p className="footer-link">rdConcepts Portfolio</p></a>
+                            <a href="https://shadowboxfarms.com/"><p className="footer-link">ShadowboxFarms.com</p></a>
+                            <a href="https://wproducts.co/"><p className="footer-link">WProducts.co</p></a>
+                            <a href="https://rdconcepts.design/"><p className="footer-link">rdConcepts.design</p></a>
                             
                         </div>
                     </div>
@@ -73,7 +73,7 @@ function Footer() {
                 <a href="mailto:someone@example.com"><p className="copyright-link">rdConcepts design.</p></a>
                 <div className="flex-row">
                     <p className="copyright-link">UI / UX Design. Web & Mobile Dev.</p>
-                    <p className="copyright-link">Portland, Oregon.</p>
+                    <p className="copyright-link"> Remote RV Traveler.</p>
                 </div>
             </div>
   

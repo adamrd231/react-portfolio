@@ -178,6 +178,16 @@ a:hover {
 }
 
 
+/*** Nature FM  App Page Styling ***/
+/* ======================== */
+.nature-fm-container {
+  width: 66%; 
+  margin: auto;
+  padding-bottom: 5em;
+}
+
+
+
 /*** LANDING PAGE STYLING ***/
 /* ======================== */
 
@@ -426,11 +436,11 @@ a:hover {
   background-color: #ededed;
   width: 100%;
   padding: 5em;
+  border-bottom-right-radius: 2em;
+  border-top-left-radius: 2em;
 }
 
-.blogs-container:hover {
-  opacity: 0.85;
-}
+
 
 .blog-post {
 
