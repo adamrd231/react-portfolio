@@ -177,6 +177,21 @@ a:hover {
   font-size: 1.2em;
 }
 
+.terms-privacy-container {
+  font-size: 11px;
+  border-top: 1px solid #666;
+  padding-top: 2em;
+  margin-top: 2em;
+}
+
+.sub-menu-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sub-menu-item {
+  padding-left: 1em;
+}
 
 /*** Nature FM  App Page Styling ***/
 /* ======================== */

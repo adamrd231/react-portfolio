@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Menu from './menu';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { API } from '../api-service';
 
 function NatureFM() {
@@ -12,9 +13,15 @@ return (
             <h1>NatureFM</h1>
             <h4>Tune in to the great outdoors.</h4>
             <p>Nature FM is a mobile app designed for iOS and the App store. Released in June of 2021, Nature FM is a white noise generator that uses noise generated from the great outdoors. Do you like rain in michigan, new hampshire or oregon? Want to remember the sound of the running river? Just tune in.</p>
-
-            <div>
-            <h3>Terms & Conditions</h3>
+            <br></br>
+            
+            <div className="terms-privacy-container">
+                <div className="sub-menu-container">
+                    <HashLink to="#terms" className="sub-menu-item clickable">Terms & Conditions</HashLink>
+                    <HashLink to="#privacy" className="sub-menu-item clickable">Privacy Policy</HashLink>
+                </div>
+           
+            <h3 id="terms">Terms & Conditions</h3>
             <p>By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Adam Reed.</p>
 
             <p>Adam Reed is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.</p>
@@ -51,7 +58,7 @@ return (
 
             <p>If you have any questions or suggestions about my Terms and Conditions, do not hesitate to contact me at adam@rdconcepts.design.</p>
 
-            <h3>Privacy Policy</h3>
+            <h3 id="privacy">Privacy Policy</h3>
 
             <p>Adam Reed built the Nature FM app as a Freemium app. This SERVICE is provided by Adam Reed at no cost and is intended for use as is.
 
@@ -84,9 +91,7 @@ return (
             This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
 
             <br></br><b>Service Providers</b><br></br>
-
             I may employ third-party companies and individuals due to the following reasons:
-
             To facilitate our Service;
             To provide the Service on our behalf;
             To perform Service-related services; or
@@ -94,28 +99,20 @@ return (
             I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
 
             <br></br><b>Security</b><br></br>
-
             I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.
 
             <br></br><b>Links to Other Sites</b><br></br>
-
             This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
 
             <br></br><b>Children’s Privacy</b><br></br>
-
             These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13 years of age. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary actions.
 
             <br></br><b>Changes to This Privacy Policy</b><br></br>
-
             I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
-
             This policy is effective as of 2021-10-16
 
             <br></br><b>Contact Us</b><br></br>
-
             If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at adam@rdconcepts.design.
-
-            This privacy policy page was created at privacypolicytemplate.net and modified/generated by App Privacy Policy G
             </p>
 
             </div>
