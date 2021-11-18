@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import './Responsive.css';
 
 import Menu from './components/menu';
 import LandingPage from './components/landing_page';

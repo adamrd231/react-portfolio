@@ -69,49 +69,50 @@ function Portfolio() {
     if (entriesLoaded === true) {
         return (
             <div id="portfolio" className="portfolio-container"> 
-                <h1 className="portfolio-title">Body of Work</h1>
-                <div className="portfolio-box" >
-                    
-                    { entries && entries.slice(0, 6).map( entry => {    
-                        return (
-                            <div className="portfolio-entry clickable" id={entry.slug} key={entry.id} onMouseEnter={handleMouseHover} onMouseLeave={handleMouseHover}>
-                                <Link className="home-page-portfolio"
-                                        to={{
-                                            pathname: "/portfolio/" + entry.slug,
-                                            state: entry = entry
-                                            }}>
-        
-                                        <img 
-                                            src={`https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/${entry.image_url}`} 
-                                            alt="Project Images"  >
-                                        </img>
-                                </Link>      
-                            </div>
-                        )
-                    })}
-                </div>
-                
-                <div className="porfolio-slug-section">
-                     <div className="category-container">
+
+                <div className="landing-text-container">
+                    <h1 className="landing-title">Body of Work.</h1>
+                    <div className="category-container">
                          <h3 className="category-item">Categories:</h3>
                         { categories.map( categ => {
                             return (
                                 <p className="category-item clickable">{categ.name}</p> 
                             )
-                            
                         })}
                     </div>
+                    <h2 className="landing-quote">Projects I have developed and available on the App Store.</h2>
+                    <h2 className="landing-text">Using native swift development in XCode, I have developed over seven iPhone/IPad and MacOS Apps. From architecture, to design, development and deployment, I can handle the entire lifecycle of an iPhone app.</h2>
+               
+                    <div className="portfolio-box" >
                     
-                    <p>For more app development, UX and UI design, Illustrations or to check out my work, see where I have been traveling, what I have been designing. click the link below.</p>
-                    <Link to={{
-                        pathname: "/fullPortfolio",
-                        }}><h2>Explore full portfolio.</h2>
-                    </Link>
-                        
-                    
+                        { entries && entries.slice(0, 6).map( entry => {    
+                            return (
+                                <div className="portfolio-entry clickable" id={entry.slug} key={entry.id} onMouseEnter={handleMouseHover} onMouseLeave={handleMouseHover}>
+                                    <Link className="image-link"
+                                            to={{
+                                                pathname: "/portfolio/" + entry.slug,
+                                                state: entry = entry
+                                                }}>
+                                            <div className="portfolio-link-container">
+                                                <img 
+                                                    src={`https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/${entry.image_url}`} 
+                                                    alt="Project Images"  >
+                                                </img>
+                                                <div className="portfolio-text-container">
+                                                    <p className="portfolio-title">{entry.title}</p>
+                                                    <p className="portfolio-tagline">{entry.tagline}</p>  
+                                                    <p className="portfolio-category">{entry.category_name}</p>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                    </Link>  
+                                    
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
-                <div className="gray-color"></div>
-                
             </div>
             
         )

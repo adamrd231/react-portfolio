@@ -70,11 +70,11 @@ function Footer() {
             </div>
 
             <div className="footer-icon-container">
-                <a href="mailto:someone@example.com"><p className="copyright-link">rdConcepts design.</p></a>
-                <div className="flex-row">
-                    <p className="copyright-link">UI / UX Design. Web & Mobile Dev.</p>
-                    <p className="copyright-link"> Remote RV Traveler.</p>
-                </div>
+                
+                <a href="mailto:someone@example.com"><p className="copyright-link">Adam Reed // rdConcepts Design</p></a>
+                <p className="copyright-link">iOS Designer & Developer. Digital & Brand Development.</p>
+                <p className="copyright-link">Locatd in Boise, Idaho.</p>
+
             </div>
   
             

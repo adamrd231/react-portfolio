@@ -11,16 +11,22 @@ function Blogs() {
         API.getBlogs().then( blogs => { SetBlogLoaded(blogs) })
     },[])
 
+    const formatDate = (dateString) => {
+        const options = { year: "numeric", month: "long", day: "numeric" }
+        return new Date(dateString).toLocaleDateString(undefined, options)
+      }
+
     if (blogLoaded) {
         return (
             <div id="blogs" className="home-page-blogs">
-                <h1 className="portfolio-title">Blogs</h1>
-                <div className="overall-blog-container">
+                <div className="landing-text-container">
+                    <h1 className="landing-title">Blogs</h1>
+                    <div className="overall-blog-container">
                     {/* BLog layout, pagination or choosing how many to display */}
-                    <div className="blogs-container">
+
                         { blogLoaded && blogLoaded.map( blog => {
         
-                            let newDate = Date((blog.created_on))
+                            let newDate = formatDate(blog.created_on)
         
                             return (
                                 <div key={blog.id} className="blog-post clickable">
@@ -30,15 +36,20 @@ function Blogs() {
                                             blog: blog
                                         }
                                      }}>
-                                         <div className="lineBreak"></div>
-                                        <h2>{blog.title}</h2>
-                                        <div className="lineBreak"></div>
+                                        <div className="blog-container">
+                                            <p className="blog-date">{newDate}</p>
+                                            <p className="blog-title">{blog.title}</p>
+                                        </div>
+                                    
                                     </Link>
                                 </div>
                             )
                         })}
-                    </div>
+                    
                 </div>
+                </div>
+                
+
             </div>
         
             )

@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter } from 'react-router-dom';
-import BlogsMenu from './components/blogs-template';
 import SingleBlogTemplate from './components/single-blog-template';
 import SingleProjectTemplate from './components/single-project-template';
 import AllProjectsPage from './components/all-projects-page';
@@ -16,7 +15,6 @@ const routing = (
 
           <Route exact path="/" component={App}></Route>
           <Route exact path="/NatureFM" component={NatureFM}></Route>
-          <Route exact path="/blogs" component={BlogsMenu}></Route>
           <Route path ="/fullPortfolio" component={AllProjectsPage}></Route>
           <Route path="/blogs/:slug" component={SingleBlogTemplate}></Route>
           <Route path="/portfolio/:slug" component={SingleProjectTemplate}></Route>
