@@ -15,8 +15,9 @@ function SingleProjectTemplate(props) {
     return  (
        
     <React.Fragment>    
+        <SecondaryMenu />
         <div className="single-page-project-container App">
-            <SecondaryMenu />
+            
 
             {/* This is the image layout, pulls from the landing page */}
             <div className="single-page-image-container">
