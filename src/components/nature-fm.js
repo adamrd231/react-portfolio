@@ -9,13 +9,17 @@ function NatureFM() {
 return (
     <React.Fragment>
         <SecondaryMenu />
-        <img className="app-image-header" src="https://portfolio-website-adamrd231.s3.us-west-1.amazonaws.com/Artboard+4+copy1024.png"></img>
-        <div className="nature-fm-container">
-            <h1>NatureFM</h1>
-            <h4>Tune in to the great outdoors.</h4>
-            <p>Nature FM is a mobile app designed for iOS and the App store. Released in June of 2021, Nature FM is a white noise generator that uses noise generated from the great outdoors. Do you like rain in michigan, new hampshire or oregon? Want to remember the sound of the running river? Just tune in.</p>
-            <a href="https://apps.apple.com/no/app/nature-fm/id1576891060?l=nb"><img className="app-store-icon" src="https://portfolio-website-adamrd231.s3.us-west-1.amazonaws.com/app-store.png" /></a>
-            <br></br>
+        <div className="app-container">
+            
+            <div className="nature-fm-container">
+            <img className="app-image-header" src="https://portfolio-website-adamrd231.s3.us-west-1.amazonaws.com/Artboard+4+copy1024.png"></img>
+                <h1>NatureFM</h1>
+                <h4>Tune in to the great outdoors.</h4>
+                <p>Nature FM is a mobile app designed for iOS and the App store. Released in June of 2021, Nature FM is a white noise generator that uses noise generated from the great outdoors. Do you like rain in michigan, new hampshire or oregon? Want to remember the sound of the running river? Just tune in.</p>
+                <a href="https://apps.apple.com/no/app/nature-fm/id1576891060?l=nb"><img className="app-store-icon" src="https://portfolio-website-adamrd231.s3.us-west-1.amazonaws.com/app-store.png" /></a>
+                <br></br>
+        </div>
+        
             
             <div className="terms-privacy-container">
                 <div className="sub-menu-container">

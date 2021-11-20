@@ -24,9 +24,18 @@ function Footer() {
                                 <p className="small-font">I built this design using React.js to develop the frontend portfolio. Then using the Python language, I developed the backend RestAPI with the Django framework. The API is hosted by Heroku, and the frontend is hosted with Firebase.</p>
                             </div>
                             <div className="flex-row">
-                                <a href="https://www.instagram.com/adamrd231/"><img className="footer-icons" src="https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/photos/insta-white.png" alt="Instagram"/>    </a>
-                                <a href="https://www.linkedin.com/in/rdconcepts/"><img className="footer-icons" src="https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/photos/linkedin-white.png" alt="Instagram"/></a>
-                                <a href="https://github.com/adamrd231"><img className="footer-icons" src="https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/photos/github-white.png" alt="Instagram"/></a>
+                                {/* First Icon */}
+                                <a href="https://www.instagram.com/adamrd231/" target="_blank" rel="noopener noreferrer">
+                                    <img className="footer-icons" src="https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/photos/insta-white.png" alt="Instagram"/>
+                                </a>
+                                {/* Second Icon */}
+                                <a href="https://www.linkedin.com/in/rdconcepts/" target="_blank" rel="noopener noreferrer">
+                                    <img className="footer-icons" src="https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/photos/linkedin-white.png" alt="Instagram"/>
+                                </a>
+                                {/* Third Icon */}
+                                <a href="https://github.com/adamrd231" target="_blank" rel="noopener noreferrer">
+                                    <img className="footer-icons" src="https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/media/photos/github-white.png" alt="Instagram"/>
+                                </a>
                             </div>
                             
                         </div>

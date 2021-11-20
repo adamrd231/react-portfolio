@@ -143,10 +143,12 @@ a:hover {
 }
 
 .terms-privacy-container {
+  width: 85%;
   font-size: 11px;
   border-top: 1px solid #666;
   padding-top: 2em;
   margin-top: 2em;
+  padding-bottom: 7em;
 }
 
 .sub-menu-container {
@@ -160,17 +162,28 @@ a:hover {
 
 /*** Nature FM  App Page Styling ***/
 /* ======================== */
-.nature-fm-container {
-  width: 66%; 
+.app-container {
+  width: 90%;
   margin: auto;
+}
+
+
+.nature-fm-container {
+  width: 85%; 
   padding-bottom: 5em;
 }
 
+
 .app-image-header {
-  width: 100%;
-  height: 44vh;
+  width: 8em;
+  margin: auto;
+
+  height: 7em;
   object-fit:cover;
+  border-radius: 1em;
+  
 }
+
 
 .app-store-icon {
   width: 160px;
