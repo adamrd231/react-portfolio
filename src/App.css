@@ -577,6 +577,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 3em;
 }
 
 .footer-row-1 {

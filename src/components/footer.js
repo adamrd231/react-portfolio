@@ -21,7 +21,8 @@ function Footer() {
                         <div className="flex-row">   
                             <div className="half-width">
                                 <p className="small-font">Thank you for visiting my portfolio website.</p>
-                                <p className="small-font">I built this design using React.js to develop the frontend portfolio. Then using the Python language, I developed the backend RestAPI with the Django framework. The API is hosted by Heroku, and the frontend is hosted with Firebase.</p>
+                                <p className="small-font">I built this website using React.js to develop the frontend portfolio and is deployed with firebase for easy hosting and ability to update with a GitHub Repository. </p>
+                                <p className="small-font">Using the Python language, I developed the backend RestAPI with the Django framework. The API is hosted by Heroku.</p>
                             </div>
                             <div className="flex-row">
                                 {/* First Icon */}
