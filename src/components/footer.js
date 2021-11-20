@@ -48,7 +48,7 @@ function Footer() {
 
             <div className="footer-icon-container">
                 
-                <a href="mailto:someone@example.com"><p className="copyright-link">Adam Reed // rdConcepts Design</p></a>
+                <a href="mailto:adam@rdconcepts.design"><p className="copyright-link">Adam Reed // rdConcepts Design</p></a>
                 <p className="copyright-link">iOS Designer & Developer. Digital & Brand Development.</p>
                 <p className="copyright-link">Locatd in Boise, Idaho.</p>
 
