@@ -118,9 +118,10 @@ function Portfolio() {
         )
     } else {
         return (
-            <div id="portfolio" className="portfolio-container"> 
+            <div id="blogs" className="home-page-blogs">
                 <p className="loading-graphic">Loading Portfolio...</p>
             </div>
+ 
         )
     }
     
