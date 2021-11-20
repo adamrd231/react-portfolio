@@ -24,7 +24,7 @@ function SingleBlogTemplate(props) {
 
 
     return (
-        <div className="App single-page-blog-container">
+        <div className="single-page-blog-container App">
             <SecondaryMenu /> 
             <div className="single-blog-container">
                 
@@ -32,7 +32,7 @@ function SingleBlogTemplate(props) {
                     <h1>{blog.blog.title}</h1>
                     <p>{createdOn}</p>
                     <p className="blog-text" dangerouslySetInnerHTML = {{ __html: blog.blog.blog }}></p>
-                    <p className="blog-author">Adam Reed</p>
+                    
                 </div>  
             </div>
             <Footer />

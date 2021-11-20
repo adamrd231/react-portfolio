@@ -13,9 +13,9 @@ function SingleProjectTemplate(props) {
 
 
     return  (
-        <div className="single-page-project App">
-            
-            <div className="single-page-project-container">
+       
+    <React.Fragment>    
+        <div className="single-page-project-container App">
             <SecondaryMenu />
 
             {/* This is the image layout, pulls from the landing page */}
@@ -30,9 +30,9 @@ function SingleProjectTemplate(props) {
 
             {/* This is the information section */}
             <div className="single-page-project-copy">
-                <h1>{ent.title}</h1>
-                <h2>{ent.tagline}</h2>
-                <p><strong>Tools: </strong>{ent.technology}</p>
+                <p className="single-page-title">{ent.title}</p>
+                <p className="single-page-tagline">{ent.tagline}</p>
+                <p className="single-page-tools">Tools: {ent.technology}</p>
                 
                 <span dangerouslySetInnerHTML = {{ __html: ent.description}}></span>
 
@@ -51,12 +51,10 @@ function SingleProjectTemplate(props) {
                     })}
                 </div>
             </div>
-
-            
+        
         </div>
         <Footer />
-        
-    </div>
+    </React.Fragment>
     )
 
     }
