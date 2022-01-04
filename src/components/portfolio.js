@@ -80,9 +80,10 @@ function Portfolio() {
                             )
                         })}
                     </div>
-                    <h2 className="landing-quote">Projects I have developed and available on the App Store.</h2>
-                    <h2 className="landing-text">Using native swift development in XCode, I have developed over seven iPhone/IPad and MacOS Apps. From architecture, to design, development and deployment, I can handle the entire lifecycle of an iPhone app.</h2>
-               
+                    <div className="portfolio-text-limit">
+                        <h2 className="landing-quote">Projects I have developed and available on the App Store.</h2>
+                        <h2 className="landing-text">Using native swift development in XCode, I have developed over seven iPhone/IPad and MacOS Apps. From architecture, to design, development and deployment, I can handle the entire lifecycle of an iPhone app.</h2>
+                    </div>
                     <div className="portfolio-box" >
                     
                         { entries && entries.slice(0, 6).map( entry => {    

@@ -14,8 +14,8 @@ function Footer() {
                     </div>
                     <div className="footer-company-links">
                         <div className="flex-row">
-                            <p className="footerlinks-title">My Links</p>
-                            <p>-></p>
+                            <p className="footerlinks-title">About Adam Reed</p>
+                            <p></p>
                         </div>
     
                         <div className="flex-row">   

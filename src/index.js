@@ -7,14 +7,12 @@ import { Route, BrowserRouter } from 'react-router-dom';
 import SingleBlogTemplate from './components/single-blog-template';
 import SingleProjectTemplate from './components/single-project-template';
 import AllProjectsPage from './components/all-projects-page';
-import NatureFM from './components/nature-fm';
 
 const routing = (
   <React.StrictMode>
     <BrowserRouter>
 
           <Route exact path="/" component={App}></Route>
-          <Route exact path="/NatureFM" component={NatureFM}></Route>
           <Route path ="/fullPortfolio" component={AllProjectsPage}></Route>
           <Route path="/blogs/:slug" component={SingleBlogTemplate}></Route>
           <Route path="/portfolio/:slug" component={SingleProjectTemplate}></Route>

@@ -11,7 +11,6 @@ function Menu() {
 
              <div className="menu">
                 <Link to="/" className="menu-item link clickable">Home</Link>
-                <Link to="/NatureFM" className="menu-item link clickable">Nature FM</Link>
                 <HashLink to="#portfolio" className="menu-item link clickable">Portfolio</HashLink>
                 <HashLink to="#blogs" className="menu-item link clickable">Blogs</HashLink>
                 <HashLink to="#footer" className="menu-item link clickable">Contact</HashLink>

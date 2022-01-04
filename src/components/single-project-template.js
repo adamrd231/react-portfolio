@@ -31,15 +31,18 @@ function SingleProjectTemplate(props) {
 
             {/* This is the information section */}
             <div className="single-page-project-copy">
-                <p className="single-page-title">{ent.title}</p>
-                <p className="single-page-tagline">{ent.tagline}</p>
-                <p className="single-page-tools">Tools: {ent.technology}</p>
-                
-                <span dangerouslySetInnerHTML = {{ __html: ent.description}}></span>
+                <div className="single-page-copy-width">
+                    <p className="single-page-title">{ent.title}</p>
+                    <p className="single-page-tagline">{ent.tagline}</p>
+                    <p className="single-page-tools">Tools: {ent.technology}</p>
+                    
+                    <span dangerouslySetInnerHTML = {{ __html: ent.description}}></span>
 
-                <a className="clickable" href={ent.website}>
-                    <button className="app-store-button clickable">{ent.website_button_text}</button>
-                </a>
+                    <a className="clickable" href={ent.website} target="_blank">
+                        <button className="app-store-button clickable">{ent.website_button_text}</button>
+                    </a>
+                </div>
+                
                 
                 <div className="quote-box">
                     { ent.quote_string.map( quote => {
