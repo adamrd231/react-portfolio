@@ -446,10 +446,10 @@ a:hover {
   display: flex;
   align-items: center;
   padding-top: -1em;
-  padding-bottom: 12em;
+ 
   width: 90%;
   margin: auto;
-  min-height: 70vh;
+  min-height: 140vh;
 
 }
 
@@ -706,4 +706,49 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.pricing-page-container {
+  margin: auto;
+  width: 90%;
+}
+
+.pricing-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
+
+  min-height: 80vh;
+  margin-bottom: 6em;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.table-column {
+  padding-right: 2em;
+  padding-top: 1em;
+}
+
+.table-title {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.table-footnote {
+  padding-top: 2em;
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
+.pricing-email {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
 

@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import './Responsive.css';
 
-import Menu from './components/menu';
+import Menu from './components/menus/menu';
 import LandingPage from './components/landing_page';
 import Portfolio from './components/portfolio';
 import Footer from './components/footer';

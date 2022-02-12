@@ -13,6 +13,7 @@ function Menu() {
                 <Link to="/" className="menu-item link clickable">Home</Link>
                 <HashLink to="#portfolio" className="menu-item link clickable">Portfolio</HashLink>
                 <HashLink to="#blogs" className="menu-item link clickable">Blogs</HashLink>
+                <Link to="/pricing" className="menu-item link clickable">Pricing</Link>
                 <HashLink to="#footer" className="menu-item link clickable">Contact</HashLink>
              </div>
 

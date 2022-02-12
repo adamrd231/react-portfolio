@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import SecondaryMenu from './secondary-menu';
+import SecondaryMenu from './menus/secondary-menu';
 import Footer from './footer';
 // Import React SummerNote modules
 // import RichTextEditor from './summernote';

@@ -7,8 +7,8 @@ function LandingPage() {
             <div className="landing-page">
                 <div className="landing-text-container">
                     <h1 className="landing-title">Adam Reed.</h1>
-                    <h2 className="landing-quote">Living in Boise, Idaho working at the intersection of UX / UI design and development.</h2>
-                    <h2 className="landing-text">Experienced with brand, product and packaging design utilizing the Adobe Suite, front-end web designer using HTML & CSS, photography and social media management, iOS native development using SwiftUI.</h2>
+                    <h2 className="landing-quote">iOS Freelance Developer Living in Boise, Idaho.</h2>
+                    <h2 className="landing-text">Native iOS development from scratch to final product, with over eight projects developed and shipped to the App Store. Experienced designer with brands, ability to build custom websites.</h2>
                 </div>
             </div> 
             

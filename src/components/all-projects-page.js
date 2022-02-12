@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import SecondaryMenu from './secondary-menu';
+import SecondaryMenu from './menus/secondary-menu';
 import Footer from './footer';
 import { API } from '../api-service';
 import { Link } from 'react-router-dom';

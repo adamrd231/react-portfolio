@@ -7,6 +7,7 @@ import { Route, BrowserRouter } from 'react-router-dom';
 import SingleBlogTemplate from './components/single-blog-template';
 import SingleProjectTemplate from './components/single-project-template';
 import AllProjectsPage from './components/all-projects-page';
+import PricingPage from './components/pricingInformation';
 
 const routing = (
   <React.StrictMode>
@@ -16,6 +17,7 @@ const routing = (
           <Route path ="/fullPortfolio" component={AllProjectsPage}></Route>
           <Route path="/blogs/:slug" component={SingleBlogTemplate}></Route>
           <Route path="/portfolio/:slug" component={SingleProjectTemplate}></Route>
+          <Route path="/pricing" component={PricingPage}></Route>
 
     </BrowserRouter>
   </React.StrictMode>
