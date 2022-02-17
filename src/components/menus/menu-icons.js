@@ -13,6 +13,13 @@ function MenuIcons() {
             <a href="https://github.com/adamrd231" target="_blank" rel="noopener noreferrer">
                 <img src="https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/github-clean.png" alt="Instagram"/>
             </a>
+
+            <a href="https://www.buymeacoffee.com/adamreed" target="_blank" rel="noopener noreferrer">
+                <img src="https://portfolio-website-adamrd231.s3.us-west-1.amazonaws.com/buymeacoffee.png" alt="Instagram"/>
+            </a>
+
+
+            
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import './Responsive.css';
+import './CSS/App.css';
+import './CSS/menu.css';
 
 import Menu from './components/menus/menu';
 import LandingPage from './components/landing_page';
