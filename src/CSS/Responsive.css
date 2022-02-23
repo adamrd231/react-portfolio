@@ -1,0 +1,41 @@
+@media screen and (max-width: 720px) {
+    .category-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 1em;
+    }
+  
+    .landing-text {
+      width: 100%;
+    }
+
+    .menu-container {
+        height: 5em;
+    }
+  
+
+      .width-menu {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        
+
+      }
+
+
+      .menu-item {
+        color: #ededed;  
+        font-weight: 700;
+        font-size: 0.66em;
+      }
+
+      .icons {
+        min-height: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 0.25em;
+      }
+  }
