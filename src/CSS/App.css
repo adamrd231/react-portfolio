@@ -145,7 +145,7 @@ a:hover {
   align-items: center;
   width: 90%;
   margin: auto;
-  min-height: 80vh;
+  min-height: 100vh;
   margin-bottom: 6em;
 
 }
@@ -525,8 +525,8 @@ a:hover {
 /* ============================== */
 
 .footer {
-  color: #efefef;
-  background-color: #111;
+  color: #333;
+  background-color: #ededed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -561,17 +561,14 @@ a:hover {
   width: 66.5%;
 }
 
-.footer-link {
-  color: #ededed;
-}
 
 .footer-link:hover {
-  color: #999 !important;
+  color: #111 !important;
 }
 
 
 .footer-link {
-  color: rgba(226, 226, 226, 0.856);
+  color: #333;
   font-size: 14px;
 }
 
@@ -581,7 +578,7 @@ a:hover {
 }
 
 .copyright-link {
-  color: rgba(226, 226, 226, 0.856);
+  color: #333;
   font-size: .75em;
   padding: 0.1em;
 }

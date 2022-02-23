@@ -8,8 +8,8 @@ function Menu() {
     return (
        <div id="home" className="menu-container">
              
-
-             <div className="menu">
+         <div className="width-menu">
+         <div className="menu">
                 <Link to="/" className="menu-item link clickable">Home</Link>
                 <HashLink to="#portfolio" className="menu-item link clickable">Portfolio</HashLink>
                 <HashLink to="#blogs" className="menu-item link clickable">Blogs</HashLink>
@@ -25,6 +25,8 @@ function Menu() {
              </div>
 
              <MenuIcons></MenuIcons>
+         </div>
+             
        </div>
         
     )
