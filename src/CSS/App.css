@@ -176,7 +176,7 @@ a:hover {
 }
 
 .landing-text {
-
+  width: 50%;
   margin-top: 0;
   font-weight: 400;
 }
@@ -663,7 +663,7 @@ a:hover {
   justify-content: center;
   width: 80%;
 
-  min-height: 80vh;
+  min-height: 100vh;
   margin-bottom: 6em;
 }
 

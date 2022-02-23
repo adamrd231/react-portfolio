@@ -6,10 +6,12 @@ function SecondaryMenu() {
 
     return (
         <div id="home" className="menu-container">
-            <div className="link clickable">
-                <Link className="menu-item" to="/">Home</Link>
+            <div className="secondary-menu">
+                <div className="link clickable">
+                    <Link className="menu-item" to="/">Home</Link>
+                </div>
+                <MenuIcons></MenuIcons>
             </div>
-            <MenuIcons></MenuIcons>
         </div>
         
         
