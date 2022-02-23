@@ -8,7 +8,7 @@ function LandingPage() {
                 <div className="landing-text-container">
                     <h1 className="landing-title">Adam Reed.</h1>
                     <h2 className="landing-quote">iOS Freelance Developer Living in Boise, Idaho.</h2>
-                    <h2 className="landing-text">Native iOS development from scratch to final product, with over eight projects developed and shipped to the App Store. Experienced designer with brands, ability to build custom websites.</h2>
+                    <h2 className="landing-text">Native Web & iOS development from scratch to final product, with over eight projects developed and shipped to the App Store. Experienced designer with brands, custom websites built with React.JS.</h2>
                 </div>
             </div> 
             
