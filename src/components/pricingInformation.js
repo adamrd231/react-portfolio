@@ -10,8 +10,11 @@ function PricingPage() {
             <SecondaryMenu></SecondaryMenu>
                 <div className="pricing-page-container App">
                     <div className="pricing-section-container">
-                        <div className="landing-title">iOS Dev, from scratch.</div>
-                        <p>Hello, my name is Adam Reed and I am a freelance iOS developer. I specialize on helping businesses realize their dream of building an iOS app for the App Store. Because I am a solo design / development studio, I am able to bring all of my value to your app, instead of overhead, middleman charges for developers, etc. I can work with existing databases for things like showing restaurant products on a menu, or clothing items from your inventory. If you have ever thought, "I would love to be in the App Store" lets talk!</p>
+                        <div className="landing-title">Big projects, small team.</div>
+                        <p>Have you ever dreamed about building an website or iOS app for your small business? My name is Adam Reed and I am a freelance web & iOS developer. I work with small businesses building their dream of launching a website or iOS app for the App Store.</p> 
+                        <p>Because I am a solo design / development studio, I am able to offer my services for a fraction of design studios. With a background in design and development, I can take your idea from paper napkin to your browser.</p>
+                        <p></p>
+                       
                     </div>
 
                     <div className="pricing-section-container">
@@ -19,11 +22,11 @@ function PricingPage() {
                         <div className="table-container">
                             <div className="table-column">
                                 <p className="table-title">Type of App</p>
-                                <p>Small App Development</p>
+                                <p>Small Project</p>
                                 <hr></hr>
-                                <p>Medium App Development</p>
+                                <p>Medium Project</p>
                                 <hr></hr>
-                                <p>Enterprise App Development</p>
+                                <p>Enterprise Project</p>
                             </div>
 
                             <div className="table-column">
@@ -37,11 +40,11 @@ function PricingPage() {
 
                             <div className="table-column">
                                 <p className="table-title">Average iOS Deployment Cost</p>  
-                                <p>$4,000-$6,000</p>
+                                <p>$2,000-$5,000</p>
                                 <hr></hr>
-                                <p>$9,000-$16,000</p>
+                                <p>$6,000-$12,000</p>
                                 <hr></hr>
-                                <p>$16,000 +</p>
+                                <p>$12,000 +</p>
                             </div>
 
                         </div>
@@ -52,7 +55,7 @@ function PricingPage() {
                         
                     </div> 
                     <div className="pricing-section-container">
-                            <div className="landing-title">Let's Talk Apps.</div>
+                            <div className="landing-title">Let's Talk.</div>
                                 <a className="pricing-email" href="mailto: adam@rdconcepts.design" target="_blank">Send me an Email</a>
                         </div>
                 </div>
