@@ -34,7 +34,7 @@ function SingleProjectTemplate(props) {
                 <div className="single-page-copy-width">
                     <p className="single-page-title">{ent.title}</p>
                     <p className="single-page-tagline">{ent.tagline}</p>
-                    <p className="single-page-tools">Tools: {ent.technology}</p>
+                    <p className="single-page-tools">{ent.technology}</p>
                     
                     <span dangerouslySetInnerHTML = {{ __html: ent.description}}></span>
 
