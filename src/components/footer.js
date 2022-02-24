@@ -24,7 +24,7 @@ function Footer() {
                                 <p className="small-font">I built this website using React.js to develop the frontend portfolio and is deployed with firebase for easy hosting and ability to update with a GitHub Repository. </p>
                                 <p className="small-font">Using the Python language, I developed the backend RestAPI with the Django framework. The API is hosted by Heroku.</p>
                             </div>
-                            <div className="flex-column">
+                            <div className="footer-icons-black flex-column">
                                 <a href="https://www.instagram.com/adamrd231/" target="_blank" rel="noopener noreferrer">
                                     <img className="footer-icons" src="https://portfolio-website-adamrd231.s3-us-west-1.amazonaws.com/insta-clean.png" alt="Instagram"/>    
                                 </a>
