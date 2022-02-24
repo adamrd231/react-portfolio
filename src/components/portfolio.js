@@ -54,16 +54,6 @@ function Portfolio() {
         }
     },[hovering, SetHovering])
 
-    // API call to get 3 projects for homepage, 
-    // Loading spinner to let user know that page is loading.
-    // useEffect(() => {
-    //     API.getProjects()
-    //         .then( projects => setEntries(projects))
-    //         .then( projects => console.log(projects))
-    // },[props.entries, portfolioLoading])
-
-
-
 
     // Main Component 
     if (entriesLoaded === true) {
