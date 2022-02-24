@@ -46,8 +46,10 @@
 
       .footer-row-1 {
         padding-top: 2em;
+        padding-bottom: 1em;
         display: flex;
         flex-direction: column;
+        
       }
 
       .footer-company-links {
@@ -95,16 +97,41 @@
         font-size: 16px;
       }
 
+      
+
+      .footer-icon-container {
+        flex-direction: column;
+      }
+
+      .footer-icons-black {
+        flex-direction: row;
+      }
+
+      .footer-icons-black a {
+        padding-right: 0.25em;
+      }
+
+
+      /* SINGLE PAGE BLOG CONTAINER  */
+      .single-page-blog-container {
+        margin-top: 7em;
+       
+      }
+
+      h1 {
+        font-size: 24px;
+      }
       p {
         font-size: 14px;
+        margin-left: 0;
+        padding-left: 0;
       }
+
 
   }
 
   
 
   @media screen and (max-width: 350px) { 
-    .footer-icon-container {
-      flex-direction: column;
-    }
+    
   }
