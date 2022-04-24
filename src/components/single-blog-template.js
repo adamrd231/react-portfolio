@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import SecondaryMenu from './menus/secondary-menu';
+import Menu from './menus/menu';
 import Footer from './footer';
 // Import React SummerNote modules
 // import RichTextEditor from './summernote';
@@ -25,7 +25,7 @@ function SingleBlogTemplate(props) {
 
     return (
         <div className="single-page-blog-container App">
-            <SecondaryMenu /> 
+            <Menu /> 
             <div className="single-blog-container">
                 
                 <div className="single-page-blog">

@@ -1,13 +1,12 @@
 import React from 'react';
 import Menu from './menus/menu';
 import Footer from './footer';
-import SecondaryMenu from './menus/secondary-menu';
 
 function PricingPage() {
 
     return (
         <React.Fragment>
-            <SecondaryMenu></SecondaryMenu>
+            <Menu></Menu>
                 <div className="pricing-page-container App">
                     <div className="pricing-section-container">
                         <div className="landing-title">Big projects, small team.</div>

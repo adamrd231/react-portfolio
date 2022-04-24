@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import SecondaryMenu from './menus/secondary-menu';
+import Menu from './menus/menu';
 import Footer from './footer';
 
 function SingleProjectTemplate(props) {
@@ -15,7 +15,7 @@ function SingleProjectTemplate(props) {
     return  (
        
     <React.Fragment>    
-        <SecondaryMenu />
+        <Menu />
         <div className="single-page-project-container App">
             
 
