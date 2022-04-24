@@ -16,6 +16,7 @@ const toggleMenu = () => {
 if (usingMenu == false) {
   return (
       
+    // Regular Menu
     <div id="home" className="menu-container">
       <div className="menu">
           <MenuIcons></MenuIcons>
@@ -26,6 +27,7 @@ if (usingMenu == false) {
  )
 } else {
   return (
+    // Overlay Menu
       <div className="overlay-menu">
         <div className="flex-row">
           <div onClick={toggleMenu} className="menu-x clickable">X</div>
