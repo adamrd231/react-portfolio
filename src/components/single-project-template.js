@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Menu from './menus/menu';
-import Footer from './footer';
+import Footer from './Home/footer';
 
 function SingleProjectTemplate(props) {
 

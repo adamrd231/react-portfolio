@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Menu from './menus/menu';
-import Footer from './footer';
+import Footer from './Home/footer';
 
 function PricingPage() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <React.Fragment>

@@ -4,10 +4,10 @@ import './CSS/menu.css';
 import './CSS/Responsive.css';
 
 import Menu from './components/menus/menu';
-import LandingPage from './components/landing_page';
-import Portfolio from './components/portfolio';
-import Footer from './components/footer';
-import Blogs from './components/blogs';
+import LandingPage from './components/Home/landing_page';
+import Portfolio from './components/Home/portfolio';
+import Footer from './components/Home/footer';
+import Blogs from './components/Home/blogs';
 
 function App() {
 
