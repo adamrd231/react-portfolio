@@ -9,13 +9,17 @@ function Menu() {
 
 
 const toggleMenu = () => {
-  setUsingMenu(!usingMenu)
+  if (usingMenu == false) {
+    setUsingMenu(true)
+  } else {
+    setUsingMenu(false)
+  }
+  console.log(usingMenu)
 
 }
 
 if (usingMenu == false) {
   return (
-      
     // Regular Menu
     <div id="home" className="menu-container">
       <div className="menu">
@@ -28,6 +32,11 @@ if (usingMenu == false) {
 } else {
   return (
     // Overlay Menu
+<div id="home" className="menu-container">
+      <div className="menu">
+          <MenuIcons></MenuIcons>
+          
+      </div>
       <div className="overlay-menu">
         <div className="flex-row">
           <div onClick={toggleMenu} className="menu-x clickable">X</div>
@@ -40,6 +49,10 @@ if (usingMenu == false) {
         <HashLink onClick={toggleMenu} to="#footer" className="menu-item link clickable">Contact</HashLink>
         <Link onClick={toggleMenu} to="/pricing" className="menu-item link clickable">Dev Pricing</Link>
       </div>
+    </div>
+
+
+      
 
   )
  }    
