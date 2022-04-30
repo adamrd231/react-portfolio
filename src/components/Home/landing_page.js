@@ -3,7 +3,7 @@ import React from 'react';
 function LandingPage() {
     return (
         <React.Fragment>
-            <div id="home" className="landing-page">
+            <div id="topOfPage" className="landing-page">
                 <div className="landing-text-container">
                     <h1 className="landing-title">Adam Reed.</h1>
                     <h2 className="landing-quote">iOS Freelance Developer Living in Boise, Idaho.</h2>

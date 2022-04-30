@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 function Footer() {
     return (
@@ -7,10 +8,11 @@ function Footer() {
             <div className="footer-width">
                 <div className="footer-row-1">
                     <div className="menu-link-container">
-                        <Link to="/" className="footer-menu">Home</Link>
-                        <Link to="/" className="footer-menu">Portfolio</Link>
-                        <Link to="/" className="footer-menu">Blogs</Link>
-                        <Link to="/" className="footer-menu">Contact</Link>
+                        <HashLink to="/#topOfPage" className="footer-menu">Home</HashLink>
+                        <HashLink to="/#portfolio" className="footer-menu">Portfolio</HashLink>
+                        <HashLink to="/#blogs" className="footer-menu">Blogs</HashLink>
+                        <Link to="/resume" className="footer-menu">Resume</Link>
+                        <HashLink to="/#footer" className="footer-menu">Contact</HashLink>
                     </div>
                 </div>
             

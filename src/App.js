@@ -1,6 +1,7 @@
 import React from 'react';
 import './CSS/App.css';
 import './CSS/menu.css';
+import './CSS/portfolio.css';
 import './CSS/Responsive.css';
 
 import Menu from './components/menus/menu';

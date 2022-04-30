@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import MenuIcons from './menu-icons';
 
+import { Page } from 'react-pdf'
+import adamResume from '../CustomComponents/adam_resume.pdf';
+
 function Menu() {
 
   const [ usingMenu, setUsingMenu ] = useState(false);
@@ -43,10 +46,13 @@ if (usingMenu == false) {
           <div onClick={toggleMenu} className="menu-item menu-header clickable">MENU</div>
         </div>
         
-        <Link to="/" onClick={toggleMenu} className="menu-item link clickable">Home</Link>
-        <HashLink onClick={toggleMenu} to="#portfolio" className="menu-item link clickable">Portfolio</HashLink>
-        <HashLink onClick={toggleMenu} to="#blogs" className="menu-item link clickable">Blogs</HashLink>
-        <HashLink onClick={toggleMenu} to="#footer" className="menu-item link clickable">Contact</HashLink>
+        <HashLink to="/#topOfPage" onClick={toggleMenu} className="menu-item link clickable">Home</HashLink>
+        <HashLink onClick={toggleMenu} to="/#portfolio" className="menu-item link clickable">Portfolio</HashLink>
+
+        
+        <HashLink onClick={toggleMenu} to="/#blogs" className="menu-item link clickable">Blogs</HashLink>
+        <HashLink onClick={toggleMenu} to="/#footer" className="menu-item link clickable">Contact</HashLink>
+        <Link onClick={toggleMenu} to="/resume" className="menu-item link clickable">Resume</Link>
         <Link onClick={toggleMenu} to="/pricing" className="menu-item link clickable">Dev Pricing</Link>
       </div>
     </div>

@@ -13,17 +13,16 @@ function Portfolio() {
     // create state for portfolio entries
     const [entries, setEntries] = useState([]);
     const [categories, setCategories] = useState([]);
+    const [currentCategory, setCurrentCategory] = useState("All");
     const [entriesLoaded, SetEntriesLoaded] = useState(false);
 
     useEffect(() => {
         API.getProjects()
             .then( projects => setEntries(projects))
 
-            API.getCategories()
+        API.getCategories()
             .then(cats => setCategories(cats))
-    }, []);
 
-    useEffect(() => {
         
     }, []);
 
@@ -35,14 +34,22 @@ function Portfolio() {
         }
     })
 
+    // useEffect(() => {
+    //     API.getProjectsByCategory(currentCategory)
+    //         .then( projects => setEntries(projects))
+    // }, [currentCategory]);
+
+
+    const allCategories = categories.map( entry => {
+        return (
+            <div className="category-title">{entry.name}</div>
+        )
+    })
+
+
     // Function to let components know if the mouse if hovering over them
     const handleMouseHover = () => {
         SetHovering(!hovering)
-    }
-
-    // Function to let components know if image is still loading
-    const handleImageLoading = () => {
-        
     }
 
     // Function to change classes for test by portfolio
@@ -62,21 +69,22 @@ function Portfolio() {
 
                 <div className="landing-text-container">
                     <h1 className="landing-title">Body of Work.</h1>
-                    <div className="category-container">
-                         <h3 className="category-item">Categories:</h3>
-                        { categories.map( categ => {
-                            return (
-                                <p className="category-item clickable">{categ.name}</p> 
-                            )
-                        })}
-                    </div>
+                    
                     <div className="portfolio-text-limit">
                         <h2 className="landing-quote">Projects I have developed and available on the App Store.</h2>
                         <h2 className="landing-text">Using native swift development in XCode, I have developed over seven iPhone/IPad and MacOS Apps. From architecture, to design, development and deployment, I can handle the entire lifecycle of an iPhone app.</h2>
                     </div>
+                    <div className="category-container">
+                         <div className="category-item-title">CATEGORIES</div>
+                            <div className="mapped-categories"> 
+                                {allCategories}
+                            </div>
+                         
+                        
+                    </div>
                     <div className="portfolio-box" >
-                    
-                        { entries && entries.slice(0, 6).map( entry => {    
+                        
+                        { entries.map( entry => {    
                             return (
                                 <div className="portfolio-entry clickable" id={entry.slug} key={entry.id} onMouseEnter={handleMouseHover} onMouseLeave={handleMouseHover}>
                                     <Link className="image-link"
@@ -96,9 +104,7 @@ function Portfolio() {
                                                 </div>
                                                 
                                             </div>
-                                            
                                     </Link>  
-                                    
                                 </div>
                             )
                         })}

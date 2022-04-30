@@ -1,7 +1,7 @@
 
 
 var herokuURL = "https://website-portfolio-rdconcepts.herokuapp.com/"
-// var localURL = "http://127.0.0.1:8000/"
+var localURL = "http://127.0.0.1:8000/"
 
 export class API {
 
