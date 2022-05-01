@@ -30,7 +30,7 @@ if (usingMenu == false) {
       <div className="menu">
           <MenuIcons></MenuIcons>
           <div className="logo-container">
-            <ReactLogo className="logo-image"/>
+            <ReactLogo/>
            <div className="background-name">rdConcepts</div>
           </div>
           
@@ -47,22 +47,48 @@ if (usingMenu == false) {
 <div id="home" className="menu-container">
       <div className="menu">
           <MenuIcons></MenuIcons>
-          
+          <div className="logo-container">
+            <ReactLogo/>
+           <div className="background-name">rdConcepts</div>
+          </div>
+          <div className="hidden menu-item link clickable">Menu</div>
       </div>
       <div className="overlay-menu">
         <div className="flex-row">
           <div onClick={toggleMenu} className="menu-x clickable">X</div>
-          <div onClick={toggleMenu} className="menu-item menu-header clickable">MENU</div>
         </div>
         
         <HashLink to="/#topOfPage" onClick={toggleMenu} className="menu-item link clickable">Home</HashLink>
         <HashLink onClick={toggleMenu} to="/#portfolio" className="menu-item link clickable">Portfolio</HashLink>
 
-        
-        <HashLink onClick={toggleMenu} to="/#blogs" className="menu-item link clickable">Blogs</HashLink>
-        <HashLink onClick={toggleMenu} to="/#footer" className="menu-item link clickable">Contact</HashLink>
-        <Link onClick={toggleMenu} to="/resume" className="menu-item link clickable">Resume</Link>
-        <Link onClick={toggleMenu} to="/pricing" className="menu-item link clickable">Dev Pricing</Link>
+
+        <HashLink 
+          onClick={toggleMenu} 
+          to="/#blogs" 
+          className="menu-item link clickable">
+            Blogs
+        </HashLink>
+
+        <HashLink 
+          onClick={toggleMenu} 
+          to="/#footer" 
+          className="menu-item link clickable">
+            Contact
+        </HashLink>
+
+        {/* <Link 
+          onClick={toggleMenu} 
+          to="/resume" 
+          className="menu-item link clickable">
+            Resume
+        </Link> */}
+
+        <Link 
+          onClick={toggleMenu} 
+          to="/pricing" 
+          className="menu-item link clickable">
+            Dev Pricing
+        </Link>
       </div>
     </div>
 

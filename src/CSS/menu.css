@@ -13,11 +13,15 @@
     justify-content: space-between;
 
     /* Colors */ 
-    background-color: #333;
+    background-color: #222;
 
     /* hold menu fixed at top of screen */
     position: fixed;
     top: 0;
+  }
+
+  svg {
+    height: 20px;
   }
 
   .menu {
@@ -34,7 +38,7 @@
 
 .overlay-menu {
   background-color: #2f4353;
-background-image: linear-gradient(165deg, #222222 0%, #999how  74%);
+  background-image: linear-gradient(165deg, #222222 0%, #555555  74%);
   position: fixed;
   top: 0;
   right: 0;
@@ -47,6 +51,10 @@ background-image: linear-gradient(165deg, #222222 0%, #999how  74%);
   align-items: flex-end;
   padding: 1em;
   animation: slide-in 0.5s;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 @keyframes slide-in {
