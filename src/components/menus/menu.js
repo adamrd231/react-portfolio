@@ -5,6 +5,8 @@ import MenuIcons from './menu-icons';
 
 import { Page } from 'react-pdf'
 import adamResume from '../CustomComponents/adam_resume.pdf';
+import { ReactComponent as ReactLogo } from '../../logo.svg';
+
 
 function Menu() {
 
@@ -27,6 +29,13 @@ if (usingMenu == false) {
     <div id="home" className="menu-container">
       <div className="menu">
           <MenuIcons></MenuIcons>
+          <div className="logo-container">
+            <ReactLogo className="logo-image"/>
+           <div className="background-name">rdConcepts</div>
+          </div>
+          
+         
+          
           <div onClick={toggleMenu} className="menu-item link clickable">Menu</div>
       </div>
     </div>
